@@ -9,4 +9,3 @@ params = {"access_key": "62905fc234eca138b48941106dcc9e98",
 
 res = requests.get("https://api.aviationstack.com/v1/flights", params=params)
 
-print(res.json())
