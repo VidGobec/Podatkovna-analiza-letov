@@ -1,2 +1,2 @@
-import matplotlib.pyplot as plt
-
+evropa_iata = {"LHR", "IST", "CDG", "AMS", "MAD", "FRA", "BCN", "FCO", "LGW", "SVO", "MUC", "LIS", "DUB", "ATH", "VIE", "ZRH", "MXP", "OSL", "BRU", "WAW", "BUD", "ARN", "VCE", "NCE", "OTP", "HEL", "BEG", "KEF"}
+print(len(evropa_iata))
