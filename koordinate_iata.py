@@ -7,4 +7,3 @@ def koordinate_iata(iata):
     res = requests.get(url)
     data = res.json()
     return next(((letalisce["lon"], letalisce["lat"]) for letalisce in data if letalisce['iata'] == iata), "Ne obstaja!")
-
