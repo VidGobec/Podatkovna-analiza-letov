@@ -21,3 +21,5 @@ obstojeci_podatki.extend(novi_podatki)
 
 with open("podatki_svet.json", "w") as dat:
     json.dump(obstojeci_podatki, dat, ensure_ascii=False, indent=2)
+    
+print("Nalaganje podatkov je končano!")
