@@ -8,6 +8,3 @@ def koordinate_iata(iata):
     data = res.json()
     return next(((float(letalisce["lon"]), float(letalisce["lat"])) for letalisce in data if letalisce['iata'] == iata), "Ne obstaja!")
 
-found = any(entry.get("iata") == "LJU" for entry in data)
-
-print("LJU exists" if found else "LJU does not exist")
