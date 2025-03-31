@@ -39,3 +39,20 @@ print("############################")
 x = poizvedbe.get_vrednosti(pristali, ["departure","delay"])
 povp = povp_vrednost(x)
 print(f"povp vrednost zamude letal v prihodu je {povp}")
+
+
+
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+
+with open('test.json', 'r') as file:
+    data_letalisa = json.load(file)["data"]
+
+
+x = [float(x["longitude"]) for x in data_letalisa]
+y = [float(x["latitude"]) for x in data_letalisa]
+
+ax.scatter(x, y, s=15, c="blue", vmin=0, vmax=100)
+
+
+plt.show()
