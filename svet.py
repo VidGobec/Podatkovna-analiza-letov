@@ -1,14 +1,14 @@
 import koordinate_iata as coord_iata
 import requests, json
 
-svet_iata = ["JFK", "DXB", "HND", "LHR", "IST", "DEL", "PVG", "LAX", "ICN", "CDG", "SIN", "PEK", "MAD", "AMS", "FRA", "BKK", "KUL", "DOH", "FCO", "YYZ", "GRU", "SGN", "MNL", "MEX", "SYD", "ATL", "BOM", "BOG", "CGK", "JED", "DFW", "CAI", "ORD", "SCL", "JNB", "TPE", "AKL"]
 
+svet_iata = ["DEN", "CAN", "HKG", "CTU", "SZX", "CKG", "MIA", "PHX", "SEA", "LAS"]
 novi_podatki = []
-#for letalisce in svet_iata: #Pridobivanje podatkov 
-    #params = {"access_key": "62905fc234eca138b48941106dcc9e98", "dep_iata": letalisce}
-    #res = requests.get("https://api.aviationstack.com/v1/flights", params=params)
-    #podatki = res.json()["data"]
-    #novi_podatki.extend(podatki)
+for letalisce in svet_iata: #Pridobivanje podatkov 
+    params = {"access_key": "62905fc234eca138b48941106dcc9e98", "dep_iata": letalisce}
+    res = requests.get("https://api.aviationstack.com/v1/flights", params=params)
+    podatki = res.json()["data"]
+    novi_podatki.extend(podatki)
 
 #pridobimo že obstoječe podatke
 try:
