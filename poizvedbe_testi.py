@@ -42,17 +42,46 @@ print(f"povp vrednost zamude letal v prihodu je {povp}")
 
 
 
+print("\n\n")
+##graf letalisc in povprecnih zamud na letalisce
+with open('podatki_svet.json', 'r') as file:
+    data = poizvedbe(json.load(file))
+with open('vsa_letalisca.json', 'r') as file:
+    data_letalisa = json.load(file)
+
+data_po_letaliscih = data.get_grouped_data(["departure","airport"])
+tabela_zamud_po_letaliscih = []
+for letalisce, leti in data_po_letaliscih.items():
+    zamudniki = poizvedbe.get_zamudniki_ob_odhodu(leti)
+    vsota_zamud = sum([x["departure"]["delay"] for x in zamudniki])
+    povp_zamuda = vsota_zamud/len(leti)
+
+    try:
+        tabela_zamud_po_letaliscih.append([[float(x["longitude"]) for x in data_letalisa if x["airport_name"]==letalisce][0],
+                                    [float(x["latitude"]) for x in data_letalisa if x["airport_name"]==letalisce][0],
+                                    povp_zamuda])
+    except:
+        pass
+
+print(tabela_zamud_po_letaliscih) 
+#graf gostote zamujanja po letaliscih
 import matplotlib.pyplot as plt
 fig, ax = plt.subplots()
 
-with open('test.json', 'r') as file:
-    data_letalisa = json.load(file)["data"]
 
 
-x = [float(x["longitude"]) for x in data_letalisa]
-y = [float(x["latitude"]) for x in data_letalisa]
 
-ax.scatter(x, y, s=15, c="blue", vmin=0, vmax=100)
+#x = [float(x["longitude"]) for x in data_letalisa]
+#y = [float(x["latitude"]) for x in data_letalisa]
+#ax.scatter(x, y, s=15, c="red", alpha = 0.3,edgecolors=None, vmin=0, vmax=100)
+#ax.scatter(x, y, s=15, c="blue", vmin=0, vmax=100)
+tab_x = [x[0] for x in tabela_zamud_po_letaliscih]
+tab_y = [x[1] for x in tabela_zamud_po_letaliscih]
+skalar = 30 #za povecavo poprecja zamud na grafu
+tab_povpzamuda = [x[2]*skalar for x in tabela_zamud_po_letaliscih]
+
+ax.scatter(tab_x, tab_y, s=tab_povpzamuda, c="red", alpha = 0.3,edgecolors=None, vmin=0, vmax=100)
+ax.scatter(tab_x, tab_y, s=15, c="blue", vmin=0, vmax=100)
 
 
 plt.show()
