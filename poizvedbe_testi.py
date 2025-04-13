@@ -69,12 +69,14 @@ import matplotlib.pyplot as plt
 fig, ax = plt.subplots()
 
 
+#background
+import geopandas
+import geodatasets
+path = geodatasets.get_path("naturalearth.land")
+df = geopandas.read_file(path)
+ax = df.plot(figsize=(10, 10), alpha=0.5, edgecolor="k")
 
-
-#x = [float(x["longitude"]) for x in data_letalisa]
-#y = [float(x["latitude"]) for x in data_letalisa]
-#ax.scatter(x, y, s=15, c="red", alpha = 0.3,edgecolors=None, vmin=0, vmax=100)
-#ax.scatter(x, y, s=15, c="blue", vmin=0, vmax=100)
+#foregtound
 tab_x = [x[0] for x in tabela_zamud_po_letaliscih]
 tab_y = [x[1] for x in tabela_zamud_po_letaliscih]
 skalar = 30 #za povecavo poprecja zamud na grafu
