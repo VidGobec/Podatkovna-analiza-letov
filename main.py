@@ -2,7 +2,6 @@ import json, requests
 import iata 
 
 
-
 #dodajanje_podatkov = input("Ali želiš dodati podatke (Da/Ne)?: ")
 print("IATA koda letališča je tridigitalna oznaka, s katero se letališča enostavno identificirajo po svetu. IATA kodo izbranega letališča lahko najdeš tudi tukaj: https://www.iata.org/en/publications/directories/code-search/")
 iata_input = input("Vpiši iato kodo od letališča: ")
