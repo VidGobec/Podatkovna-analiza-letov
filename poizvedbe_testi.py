@@ -66,7 +66,7 @@ for letalisce, leti in data_po_letaliscih.items():
 print(tabela_zamud_po_letaliscih) 
 #graf gostote zamujanja po letaliscih
 import matplotlib.pyplot as plt
-fig, ax = plt.subplots()
+ax = plt.subplots()
 
 
 #background
