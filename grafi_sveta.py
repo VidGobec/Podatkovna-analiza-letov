@@ -37,7 +37,7 @@ ax = df.plot(ax=ax, figsize=(10, 10), alpha=0.5, edgecolor="k") #ax=ax da ne nar
 
 #povezave
 slovar_poti = dict()
-#naredimo slovar {(letalisce1, letalisce2) : stevil oletov med njima}
+#naredimo slovar {(letalisce1, letalisce2) : stevil letov med njima}
 for let in data.get_data():
     letalisce1 = let["departure"]["airport"]
     letalisce2 = let["arrival"]["airport"]
@@ -64,6 +64,7 @@ for letalisca, stevilo in slovar_poti.items():
     intenz = stevilo/najvec_letov
     if intenz > 0.3:
         ax.plot(xi,yi, color = (0,0,0.6,intenz))
+print(slovar_poti.items())
 #foreground
 tab_x = [x[0] for x in tabela_zamud_po_letaliscih]
 tab_y = [x[1] for x in tabela_zamud_po_letaliscih]
