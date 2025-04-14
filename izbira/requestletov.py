@@ -16,7 +16,7 @@ params = {
   "engine": "google_flights",
   "departure_id": "LJU",
   "arrival_id": "SIN",
-  "outbound_date": "2025-04-11",
+  "outbound_date": "2025-04-15",
   "currency": "EUR",
   "hl": "en",
   "api_key": key
