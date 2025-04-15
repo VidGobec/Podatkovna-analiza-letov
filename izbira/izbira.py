@@ -1,8 +1,6 @@
 import json
 import matplotlib.pyplot as plt
 import math
-import random
-import requests
 
 with open(f"googleleti.json", "r") as dat:
     data = json.load(dat)
