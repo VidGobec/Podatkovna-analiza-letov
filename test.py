@@ -1,2 +1,10 @@
+from serpapi import search
 
-print(tuple(sorted(["z","y"])+ ["r"]))
+params = {
+    "q": "coffee",
+    "location": "Austin, Texas, United States",
+    "api_key": "your_api_key"
+}
+
+results = search.GoogleSearch(params).get_dict()
+print(results)

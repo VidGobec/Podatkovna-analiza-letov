@@ -16,7 +16,7 @@ params = {
   "engine": "google_flights",
   "departure_id": "LJU",
   "arrival_id": "SIN",
-  "outbound_date": "2025-04-15",
+  "outbound_date": "2025-07-15",
   "currency": "EUR",
   "hl": "en",
   "api_key": key
@@ -27,6 +27,6 @@ results = search.get_json()
 
 
 with open(f"googleleti.json", "w") as dat:
-  json.dump(results,dat)
+  json.dump(results,dat, ensure_ascii=False, indent=2)
 
 
