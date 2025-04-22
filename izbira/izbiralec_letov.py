@@ -61,6 +61,7 @@ class izbiralec_letov:
         ...
         zgrajena pa je kot slovar, kjer je kljuc npr cena vrednost pa tabela vrednost (npr c1 c2 zgoraj)
         """
+        self._tabela_primerjanj.clear()
         ##cena
         self._tabela_primerjanj.append([x["price"] for x in tabela_letov])
         ##cas v zraku(v minutah)
@@ -119,6 +120,7 @@ class izbiralec_letov:
         st_vseh_opcij = len(tabela_letov)
         ocene = [0]*st_vseh_opcij
 
+        ####primerjanje####
         #more biti toliko kolikor je kljucev v preferencah
         if prefs["cena"] > 0:
             ocene = self._oceni_ceno(ocene, st_vseh_opcij)
@@ -133,8 +135,6 @@ class izbiralec_letov:
 
         naj_leti = []
         sort_ocene = sorted(ocene, reverse=True)
-        print(ocene)
-        print(sort_ocene)
         #pridobimo najbolse lete
         for ocena in sort_ocene[0:n]:
             i = 0
@@ -186,7 +186,10 @@ class izbiralec_letov:
         odklon = math.sqrt(-(self.get_ZadnjaKulUra() - 3)**2 / (2 * math.log(0.01)))
         i = 0
         while i < st_vseh_opcij:
-            st_prestopov = len(tabela_primerjanj[3][i])
+            try:
+                st_prestopov = len(tabela_primerjanj[3][i])
+            except:
+                print(tabela_primerjanj[3][i])
             for cas in tabela_primerjanj[3][i]:
                 ocene[i] += (f.cas_prestopanja(cas, odklon = odklon) * self.get_preferenca()["cas med leti"])/st_prestopov
             i += 1
