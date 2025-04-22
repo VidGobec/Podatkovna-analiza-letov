@@ -31,6 +31,7 @@ while inp != "":
         print(opcija)
     inp = input("vnesite ukaz: ")
     clear()
+    #planiranje leta
     if inp == "1":
         inp = input("zelite nastaviti svoje preference? (y,n): ")
         if inp == "y":
@@ -38,9 +39,20 @@ while inp != "":
             izbiralec.vpis_sprejemljive_ure_cakanja()
         datum1 = vnesi_datum("vpisite datum (yyyy-mm-dd): ")
         datum2 = vnesi_datum("vpisite datum (yyyy-mm-dd), ce hocete enosmeren let pustite prazno: ")
-        naj_leti = izbiralec.najbolsi_let("LJU", "SIN", datum1, datum2, 2)
+        pomTab = ["LJU","ZAG","TRS"] #,"TSF", "VCE","TRS","VIE", "SZG","LIN","MXP", "MUC","STR","FCO", "BUD","PRG","ZRH"]
+        naj_leti = izbiralec.najbolsi_let(pomTab, "SIN", datum1, datum2, 10)
         
+        i = 0
         for x in naj_leti:
-            print(x)
+            i += 1
+            print(f"LET {i}:")
+            for let in x["flights"]:
+                try:
+                    print(let["departure_airport"]["name"], "->", let["arrival_airport"]["name"])
+                except Exception as e:
+                    print(e)
+    #prikaz grafov
+    if inp == "2":
+        pass
         
         

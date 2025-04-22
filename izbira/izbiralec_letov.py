@@ -102,7 +102,10 @@ class izbiralec_letov:
                 params["return_date"] = datum_nazaj
             search = GoogleSearch(params)
             results = search.get_json()
-            leti = leti + results["best_flights"] + results["other_flights"]
+            try:
+                leti = leti + results["best_flights"] + results["other_flights"]
+            except:
+                print(f"napaka pri dobivanju podatkov za lete iz {iz_i}")
         return leti
 
 
