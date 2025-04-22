@@ -1,6 +1,8 @@
 from izbiralec_letov import izbiralec_letov
 import os
 
+#start program za "aplikacijo"
+
 def vnesi_datum(msg = "vpisite datum (yyyy-mm-dd): "):
     """funkcija, ki uporabnika prosi da vnese datum ter ga vrne"""
     while True:
