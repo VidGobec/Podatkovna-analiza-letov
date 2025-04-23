@@ -1,17 +1,88 @@
 {
-  "LJU,KLU,GRZ,/m/04jpl": [
+  "LJU,KLU,GRZ": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Letališče Gradec",
+            "id": "GRZ",
+            "time": "2025-07-30 18:45"
+          },
+          "arrival_airport": {
+            "name": "Letališče Zürich",
+            "id": "ZRH",
+            "time": "2025-07-30 20:00"
+          },
+          "duration": 75,
+          "airplane": "Airbus A220-300 Passenger",
+          "airline": "SWISS",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+          "travel_class": "Economy",
+          "flight_number": "LX 1513",
+          "legroom": "74 cm",
+          "extensions": [
+            "Below average legroom (74 cm)",
+            "Carbon emissions estimate: 68 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Letališče Zürich",
+            "id": "ZRH",
+            "time": "2025-07-30 22:40"
+          },
+          "arrival_airport": {
+            "name": "Letališče Singapur Changi",
+            "id": "SIN",
+            "time": "2025-07-31 17:05"
+          },
+          "duration": 745,
+          "airplane": "Boeing 777",
+          "airline": "SWISS",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+          "travel_class": "Economy",
+          "flight_number": "LX 176",
+          "legroom": "79 cm",
+          "extensions": [
+            "Average legroom (79 cm)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 580 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 160,
+          "name": "Letališče Zürich",
+          "id": "ZRH"
+        }
+      ],
+      "total_duration": 980,
+      "carbon_emissions": {
+        "this_flight": 649000,
+        "typical_for_this_route": 724000,
+        "difference_percent": -10
+      },
+      "price": 1150,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+      "departure_token": "WyJDalJJVGpkellqTllUWFV4T0UxQlJFWkJlR2RDUnkwdExTMHRMUzB0TFMxdmVYVnRORUZCUVVGQlIyZElNbEl3U1hkaFdrOUJFZ3hNV0RFMU1UTjhURmd4TnpZYUN3aWFnZ2NRQWhvRFJWVlNPQnh3a0lNSSIsW1siR1JaIiwiMjAyNS0wNy0zMCIsIlpSSCIsbnVsbCwiTFgiLCIxNTEzIl0sWyJaUkgiLCIyMDI1LTA3LTMwIiwiU0lOIixudWxsLCJMWCIsIjE3NiJdXV0="
+    },
     {
       "flights": [
         {
           "departure_airport": {
             "name": "Letališče Celovec",
             "id": "KLU",
-            "time": "2025-07-20 15:00"
+            "time": "2025-07-30 15:00"
           },
           "arrival_airport": {
             "name": "Mednarodno letališče Dunaj",
             "id": "VIE",
-            "time": "2025-07-20 15:50"
+            "time": "2025-07-30 15:50"
           },
           "duration": 50,
           "airplane": "ATR 72",
@@ -30,12 +101,12 @@
           "departure_airport": {
             "name": "Mednarodno letališče Dunaj",
             "id": "VIE",
-            "time": "2025-07-20 23:35"
+            "time": "2025-07-30 23:35"
           },
           "arrival_airport": {
             "name": "Letališče Suvarnabhumi",
             "id": "BKK",
-            "time": "2025-07-21 14:50"
+            "time": "2025-07-31 14:50"
           },
           "duration": 615,
           "airplane": "Boeing 777",
@@ -56,12 +127,12 @@
           "departure_airport": {
             "name": "Letališče Suvarnabhumi",
             "id": "BKK",
-            "time": "2025-07-21 16:25"
+            "time": "2025-07-31 16:25"
           },
           "arrival_airport": {
             "name": "Letališče Singapur Changi",
             "id": "SIN",
-            "time": "2025-07-21 19:40"
+            "time": "2025-07-31 19:40"
           },
           "duration": 135,
           "airplane": "Airbus A350",
@@ -97,117 +168,13 @@
       "total_duration": 1360,
       "carbon_emissions": {
         "this_flight": 650000,
-        "typical_for_this_route": 723000,
+        "typical_for_this_route": 724000,
         "difference_percent": -10
       },
-      "price": 1081,
+      "price": 1151,
       "type": "Round trip",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "departure_token": "WyJDalJJUlZWT1FsRjZSbVJDVTBGQlExVnZkV2RDUnkwdExTMHRMUzB0ZG5SaVpXUXlNRUZCUVVGQlIyZElNREJOVDA1eGMwZEJFaEJQVXprME1IeFBVekkxZkZSSE5EQTVHZ3NJb013R0VBSWFBMFZWVWpnY2NMZkZCdz09IixbWyJLTFUiLCIyMDI1LTA3LTIwIiwiVklFIixudWxsLCJPUyIsIjk0MCJdLFsiVklFIiwiMjAyNS0wNy0yMCIsIkJLSyIsbnVsbCwiT1MiLCIyNSJdLFsiQktLIiwiMjAyNS0wNy0yMSIsIlNJTiIsbnVsbCwiVEciLCI0MDkiXV1d"
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Letališče Gradec",
-            "id": "GRZ",
-            "time": "2025-07-20 16:35"
-          },
-          "arrival_airport": {
-            "name": "Mednarodno letališče Dunaj",
-            "id": "VIE",
-            "time": "2025-07-20 17:10"
-          },
-          "duration": 35,
-          "airplane": "Embraer 195",
-          "airline": "Austrian",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OS.png",
-          "travel_class": "Economy",
-          "flight_number": "OS 964",
-          "legroom": "74 cm",
-          "extensions": [
-            "Below average legroom (74 cm)",
-            "Carbon emissions estimate: 44 kg"
-          ]
-        },
-        {
-          "departure_airport": {
-            "name": "Mednarodno letališče Dunaj",
-            "id": "VIE",
-            "time": "2025-07-20 23:35"
-          },
-          "arrival_airport": {
-            "name": "Letališče Suvarnabhumi",
-            "id": "BKK",
-            "time": "2025-07-21 14:50"
-          },
-          "duration": 615,
-          "airplane": "Boeing 777",
-          "airline": "Austrian",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OS.png",
-          "travel_class": "Economy",
-          "flight_number": "OS 25",
-          "legroom": "76 cm",
-          "extensions": [
-            "Average legroom (76 cm)",
-            "In-seat USB outlet",
-            "On-demand video",
-            "Carbon emissions estimate: 490 kg"
-          ],
-          "overnight": true
-        },
-        {
-          "departure_airport": {
-            "name": "Letališče Suvarnabhumi",
-            "id": "BKK",
-            "time": "2025-07-21 16:25"
-          },
-          "arrival_airport": {
-            "name": "Letališče Singapur Changi",
-            "id": "SIN",
-            "time": "2025-07-21 19:40"
-          },
-          "duration": 135,
-          "airplane": "Airbus A350",
-          "airline": "THAI",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TG.png",
-          "travel_class": "Economy",
-          "flight_number": "TG 409",
-          "ticket_also_sold_by": [
-            "Austrian"
-          ],
-          "legroom": "81 cm",
-          "extensions": [
-            "Above average legroom (81 cm)",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 127 kg"
-          ],
-          "often_delayed_by_over_30_min": true
-        }
-      ],
-      "layovers": [
-        {
-          "duration": 385,
-          "name": "Mednarodno letališče Dunaj",
-          "id": "VIE"
-        },
-        {
-          "duration": 95,
-          "name": "Letališče Suvarnabhumi",
-          "id": "BKK"
-        }
-      ],
-      "total_duration": 1265,
-      "carbon_emissions": {
-        "this_flight": 662000,
-        "typical_for_this_route": 723000,
-        "difference_percent": -8
-      },
-      "price": 1083,
-      "type": "Round trip",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "departure_token": "WyJDalJJUlZWT1FsRjZSbVJDVTBGQlExVnZkV2RDUnkwdExTMHRMUzB0ZG5SaVpXUXlNRUZCUVVGQlIyZElNREJOVDA1eGMwZEJFaEJQVXprMk5IeFBVekkxZkZSSE5EQTVHZ3NJNGMwR0VBSWFBMFZWVWpnY2NKVEhCdz09IixbWyJHUloiLCIyMDI1LTA3LTIwIiwiVklFIixudWxsLCJPUyIsIjk2NCJdLFsiVklFIiwiMjAyNS0wNy0yMCIsIkJLSyIsbnVsbCwiT1MiLCIyNSJdLFsiQktLIiwiMjAyNS0wNy0yMSIsIlNJTiIsbnVsbCwiVEciLCI0MDkiXV1d"
+      "departure_token": "WyJDalJJVGpkellqTllUWFV4T0UxQlJFWkJlR2RDUnkwdExTMHRMUzB0TFMxdmVYVnRORUZCUVVGQlIyZElNbEl3U1hkaFdrOUJFaEJQVXprME1IeFBVekkxZkZSSE5EQTVHZ3NJK0lJSEVBSWFBMFZWVWpnY2NQeURDQT09IixbWyJLTFUiLCIyMDI1LTA3LTMwIiwiVklFIixudWxsLCJPUyIsIjk0MCJdLFsiVklFIiwiMjAyNS0wNy0zMCIsIkJLSyIsbnVsbCwiT1MiLCIyNSJdLFsiQktLIiwiMjAyNS0wNy0zMSIsIlNJTiIsbnVsbCwiVEciLCI0MDkiXV1d"
     },
     {
       "flights": [
@@ -215,12 +182,12 @@
           "departure_airport": {
             "name": "Letališče Jožeta Pučnika Ljubljana",
             "id": "LJU",
-            "time": "2025-07-20 14:30"
+            "time": "2025-07-30 14:30"
           },
           "arrival_airport": {
             "name": "Dubai International Airport",
             "id": "DXB",
-            "time": "2025-07-20 22:15"
+            "time": "2025-07-30 22:15"
           },
           "duration": 345,
           "airplane": "Boeing 737MAX 8 Passenger",
@@ -243,48 +210,48 @@
           "departure_airport": {
             "name": "Dubai International Airport",
             "id": "DXB",
-            "time": "2025-07-21 03:05"
+            "time": "2025-07-31 02:20"
           },
           "arrival_airport": {
             "name": "Letališče Singapur Changi",
             "id": "SIN",
-            "time": "2025-07-21 15:00"
+            "time": "2025-07-31 14:05"
           },
-          "duration": 475,
-          "airplane": "Airbus A380",
+          "duration": 465,
+          "airplane": "Boeing 777",
           "airline": "Emirates",
           "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
           "travel_class": "Economy",
-          "flight_number": "EK 354",
+          "flight_number": "EK 348",
           "legroom": "81 cm",
           "extensions": [
             "Above average legroom (81 cm)",
             "Wi-Fi for a fee",
             "In-seat power & USB outlets",
             "On-demand video",
-            "Carbon emissions estimate: 396 kg"
+            "Carbon emissions estimate: 394 kg"
           ],
           "overnight": true
         }
       ],
       "layovers": [
         {
-          "duration": 290,
+          "duration": 245,
           "name": "Dubai International Airport",
           "id": "DXB",
           "overnight": true
         }
       ],
-      "total_duration": 1110,
+      "total_duration": 1055,
       "carbon_emissions": {
-        "this_flight": 702000,
-        "typical_for_this_route": 723000,
+        "this_flight": 700000,
+        "typical_for_this_route": 724000,
         "difference_percent": -3
       },
-      "price": 1139,
+      "price": 1186,
       "type": "Round trip",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "departure_token": "WyJDalJJUlZWT1FsRjZSbVJDVTBGQlExVnZkV2RDUnkwdExTMHRMUzB0ZG5SaVpXUXlNRUZCUVVGQlIyZElNREJOVDA1eGMwZEJFZ3hHV2pFM09UQjhSVXN6TlRRYUN3am4rUVlRQWhvRFJWVlNPQnh3dy9rSCIsW1siTEpVIiwiMjAyNS0wNy0yMCIsIkRYQiIsbnVsbCwiRloiLCIxNzkwIl0sWyJEWEIiLCIyMDI1LTA3LTIxIiwiU0lOIixudWxsLCJFSyIsIjM1NCJdXV0="
+      "departure_token": "WyJDalJJVGpkellqTllUWFV4T0UxQlJFWkJlR2RDUnkwdExTMHRMUzB0TFMxdmVYVnRORUZCUVVGQlIyZElNbEl3U1hkaFdrOUJFZ3hHV2pFM09UQjhSVXN6TkRnYUN3akRuZ2NRQWhvRFJWVlNPQnh3d3FNSSIsW1siTEpVIiwiMjAyNS0wNy0zMCIsIkRYQiIsbnVsbCwiRloiLCIxNzkwIl0sWyJEWEIiLCIyMDI1LTA3LTMxIiwiU0lOIixudWxsLCJFSyIsIjM0OCJdXV0="
     },
     {
       "flights": [
@@ -292,86 +259,12 @@
           "departure_airport": {
             "name": "Letališče Gradec",
             "id": "GRZ",
-            "time": "2025-07-20 16:55"
-          },
-          "arrival_airport": {
-            "name": "Münchensko letališče",
-            "id": "MUC",
-            "time": "2025-07-20 17:50"
-          },
-          "duration": 55,
-          "airplane": "Embraer 195",
-          "airline": "Air Dolomiti",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EN.png",
-          "travel_class": "Economy",
-          "flight_number": "EN 8015",
-          "ticket_also_sold_by": [
-            "Lufthansa"
-          ],
-          "legroom": "76 cm",
-          "extensions": [
-            "Average legroom (76 cm)",
-            "Carbon emissions estimate: 61 kg"
-          ]
-        },
-        {
-          "departure_airport": {
-            "name": "Münchensko letališče",
-            "id": "MUC",
-            "time": "2025-07-20 22:20"
-          },
-          "arrival_airport": {
-            "name": "Letališče Singapur Changi",
-            "id": "SIN",
-            "time": "2025-07-21 16:40"
-          },
-          "duration": 740,
-          "airplane": "Airbus A350",
-          "airline": "Lufthansa",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-          "travel_class": "Economy",
-          "flight_number": "LH 768",
-          "legroom": "79 cm",
-          "extensions": [
-            "Average legroom (79 cm)",
-            "Wi-Fi for a fee",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 519 kg"
-          ],
-          "overnight": true
-        }
-      ],
-      "layovers": [
-        {
-          "duration": 270,
-          "name": "Münchensko letališče",
-          "id": "MUC"
-        }
-      ],
-      "total_duration": 1065,
-      "carbon_emissions": {
-        "this_flight": 581000,
-        "typical_for_this_route": 723000,
-        "difference_percent": -20
-      },
-      "price": 1153,
-      "type": "Round trip",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "departure_token": "WyJDalJJUlZWT1FsRjZSbVJDVTBGQlExVnZkV2RDUnkwdExTMHRMUzB0ZG5SaVpXUXlNRUZCUVVGQlIyZElNREJOVDA1eGMwZEJFZ3hGVGpnd01UVjhURWczTmpnYUN3aTdoQWNRQWhvRFJWVlNPQnh3MjRVSSIsW1siR1JaIiwiMjAyNS0wNy0yMCIsIk1VQyIsbnVsbCwiRU4iLCI4MDE1Il0sWyJNVUMiLCIyMDI1LTA3LTIwIiwiU0lOIixudWxsLCJMSCIsIjc2OCJdXV0="
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Letališče Gradec",
-            "id": "GRZ",
-            "time": "2025-07-20 19:00"
+            "time": "2025-07-30 19:00"
           },
           "arrival_airport": {
             "name": "Letališče Frankfurt",
             "id": "FRA",
-            "time": "2025-07-20 20:25"
+            "time": "2025-07-30 20:25"
           },
           "duration": 85,
           "airplane": "Embraer 190",
@@ -392,112 +285,70 @@
           "departure_airport": {
             "name": "Letališče Frankfurt",
             "id": "FRA",
-            "time": "2025-07-20 21:40"
+            "time": "2025-07-30 21:55"
           },
           "arrival_airport": {
             "name": "Letališče Singapur Changi",
             "id": "SIN",
-            "time": "2025-07-21 16:05"
+            "time": "2025-07-31 16:25"
           },
-          "duration": 745,
-          "airplane": "Airbus A380",
-          "airline": "Singapore Airlines",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+          "duration": 750,
+          "airplane": "Boeing 747",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
           "travel_class": "Economy",
-          "flight_number": "SQ 325",
-          "ticket_also_sold_by": [
-            "Lufthansa"
-          ],
-          "legroom": "81 cm",
+          "flight_number": "LH 780",
+          "legroom": "79 cm",
           "extensions": [
-            "Above average legroom (81 cm)",
-            "Free Wi-Fi",
+            "Average legroom (79 cm)",
+            "Wi-Fi for a fee",
             "In-seat power & USB outlets",
             "On-demand video",
-            "Carbon emissions estimate: 700 kg"
+            "Carbon emissions estimate: 649 kg"
           ],
-          "overnight": true
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
         }
       ],
       "layovers": [
         {
-          "duration": 75,
+          "duration": 90,
           "name": "Letališče Frankfurt",
           "id": "FRA"
         }
       ],
-      "total_duration": 905,
+      "total_duration": 925,
       "carbon_emissions": {
-        "this_flight": 794000,
-        "typical_for_this_route": 723000,
-        "difference_percent": 10
+        "this_flight": 742000,
+        "typical_for_this_route": 724000,
+        "difference_percent": 2
       },
-      "price": 1323,
+      "price": 1240,
       "type": "Round trip",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "departure_token": "WyJDalJJUlZWT1FsRjZSbVJDVTBGQlExVnZkV2RDUnkwdExTMHRMUzB0ZG5SaVpXUXlNRUZCUVVGQlIyZElNREJOVDA1eGMwZEJFZ3hGVGpnd05qVjhVMUV6TWpVYUN3aWppUWdRQWhvRFJWVlNPQnh3eTUwSiIsW1siR1JaIiwiMjAyNS0wNy0yMCIsIkZSQSIsbnVsbCwiRU4iLCI4MDY1Il0sWyJGUkEiLCIyMDI1LTA3LTIwIiwiU0lOIixudWxsLCJTUSIsIjMyNSJdXV0="
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Heathrow Airport",
-            "id": "LHR",
-            "time": "2025-07-20 11:25"
-          },
-          "arrival_airport": {
-            "name": "Letališče Singapur Changi",
-            "id": "SIN",
-            "time": "2025-07-21 07:30"
-          },
-          "duration": 785,
-          "airplane": "Airbus A380",
-          "airline": "Singapore Airlines",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
-          "travel_class": "Economy",
-          "flight_number": "SQ 317",
-          "legroom": "81 cm",
-          "extensions": [
-            "Above average legroom (81 cm)",
-            "Free Wi-Fi",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 748 kg"
-          ],
-          "overnight": true
-        }
-      ],
-      "total_duration": 785,
-      "carbon_emissions": {
-        "this_flight": 749000,
-        "typical_for_this_route": 723000,
-        "difference_percent": 4
-      },
-      "type": "Round trip",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
-      "departure_token": "WyJDalJJUlZWT1FsRjZSbVJDVTBGQlExVnZkV2RDUnkwdExTMHRMUzB0ZG5SaVpXUXlNRUZCUVVGQlIyZElNREJOVDA1eGMwZEJFZ1ZUVVRNeE56Z2MiLFtbIkxIUiIsIjIwMjUtMDctMjAiLCJTSU4iLG51bGwsIlNRIiwiMzE3Il1dXQ=="
+      "departure_token": "WyJDalJJVGpkellqTllUWFV4T0UxQlJFWkJlR2RDUnkwdExTMHRMUzB0TFMxdmVYVnRORUZCUVVGQlIyZElNbEl3U1hkaFdrOUJFZ3hGVGpnd05qVjhURWczT0RBYUN3aTN5QWNRQWhvRFJWVlNPQnh3dU5NSSIsW1siR1JaIiwiMjAyNS0wNy0zMCIsIkZSQSIsbnVsbCwiRU4iLCI4MDY1Il0sWyJGUkEiLCIyMDI1LTA3LTMwIiwiU0lOIixudWxsLCJMSCIsIjc4MCJdXV0="
     }
   ],
-  "ZAG,TRS,TSF,/m/04jpl": [
+  "ZAG,TRS,TSF": [
     {
       "flights": [
         {
           "departure_airport": {
             "name": "Letališče Zagreb",
             "id": "ZAG",
-            "time": "2025-07-20 09:50"
+            "time": "2025-07-30 15:40"
           },
           "arrival_airport": {
             "name": "Mednarodno letališče Hamad",
             "id": "DOH",
-            "time": "2025-07-20 16:20"
+            "time": "2025-07-30 22:10"
           },
           "duration": 330,
           "airplane": "Airbus A320",
           "airline": "Qatar Airways",
           "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
           "travel_class": "Economy",
-          "flight_number": "QR 216",
+          "flight_number": "QR 218",
           "legroom": "79 cm",
           "extensions": [
             "Average legroom (79 cm)",
@@ -510,47 +361,48 @@
           "departure_airport": {
             "name": "Mednarodno letališče Hamad",
             "id": "DOH",
-            "time": "2025-07-20 19:45"
+            "time": "2025-07-31 02:30"
           },
           "arrival_airport": {
             "name": "Letališče Singapur Changi",
             "id": "SIN",
-            "time": "2025-07-21 09:00"
+            "time": "2025-07-31 15:45"
           },
           "duration": 495,
           "airplane": "Airbus A350",
           "airline": "Qatar Airways",
           "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
           "travel_class": "Economy",
-          "flight_number": "QR 942",
+          "flight_number": "QR 948",
           "legroom": "79 cm",
           "extensions": [
             "Average legroom (79 cm)",
             "Wi-Fi for a fee",
             "In-seat power & USB outlets",
             "On-demand video",
-            "Carbon emissions estimate: 387 kg"
+            "Carbon emissions estimate: 412 kg"
           ],
           "overnight": true
         }
       ],
       "layovers": [
         {
-          "duration": 205,
+          "duration": 260,
           "name": "Mednarodno letališče Hamad",
-          "id": "DOH"
+          "id": "DOH",
+          "overnight": true
         }
       ],
-      "total_duration": 1030,
+      "total_duration": 1085,
       "carbon_emissions": {
-        "this_flight": 790000,
+        "this_flight": 815000,
         "typical_for_this_route": 713000,
-        "difference_percent": 11
+        "difference_percent": 14
       },
-      "price": 1187,
+      "price": 934,
       "type": "Round trip",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
-      "departure_token": "WyJDalJJWVZBNVVVczVSbFZUVld0QlEwMHRkVkZDUnkwdExTMHRMUzB0TFhscGRHOHhNMEZCUVVGQlIyZElNREZqVEZGT1kyVkJFZ3RSVWpJeE5ueFJVamswTWhvTENLZWZCeEFDR2dORlZWSTRISEMwcEFnPSIsW1siWkFHIiwiMjAyNS0wNy0yMCIsIkRPSCIsbnVsbCwiUVIiLCIyMTYiXSxbIkRPSCIsIjIwMjUtMDctMjAiLCJTSU4iLG51bGwsIlFSIiwiOTQyIl1dXQ=="
+      "departure_token": "WyJDalJJY0dseVYxWlVXRGh4ZFd0QlFqQkxNWGRDUnkwdExTMHRMUzB0TFhscGJXUXhNRUZCUVVGQlIyZElNbE5SUm5ObVZrOUJFZ3RSVWpJeE9IeFJVamswT0JvTENOUFpCUkFDR2dORlZWSTRISEN4d2dZPSIsW1siWkFHIiwiMjAyNS0wNy0zMCIsIkRPSCIsbnVsbCwiUVIiLCIyMTgiXSxbIkRPSCIsIjIwMjUtMDctMzEiLCJTSU4iLG51bGwsIlFSIiwiOTQ4Il1dXQ=="
     },
     {
       "flights": [
@@ -558,12 +410,12 @@
           "departure_airport": {
             "name": "Letališče Zagreb",
             "id": "ZAG",
-            "time": "2025-07-20 14:30"
+            "time": "2025-07-30 14:30"
           },
           "arrival_airport": {
             "name": "Dubai International Airport",
             "id": "DXB",
-            "time": "2025-07-20 22:15"
+            "time": "2025-07-30 22:15"
           },
           "duration": 345,
           "airplane": "Boeing 737MAX 8 Passenger",
@@ -586,12 +438,12 @@
           "departure_airport": {
             "name": "Dubai International Airport",
             "id": "DXB",
-            "time": "2025-07-21 02:20"
+            "time": "2025-07-31 02:20"
           },
           "arrival_airport": {
             "name": "Letališče Singapur Changi",
             "id": "SIN",
-            "time": "2025-07-21 14:05"
+            "time": "2025-07-31 14:05"
           },
           "duration": 465,
           "airplane": "Boeing 777",
@@ -624,10 +476,10 @@
         "typical_for_this_route": 713000,
         "difference_percent": -4
       },
-      "price": 1526,
+      "price": 1439,
       "type": "Round trip",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "departure_token": "WyJDalJJWVZBNVVVczVSbFZUVld0QlEwMHRkVkZDUnkwdExTMHRMUzB0TFhscGRHOHhNMEZCUVVGQlIyZElNREZqVEZGT1kyVkJFZ3hHV2pFM09UUjhSVXN6TkRnYUN3aVRxQWtRQWhvRFJWVlNPQnh3b3RNSyIsW1siWkFHIiwiMjAyNS0wNy0yMCIsIkRYQiIsbnVsbCwiRloiLCIxNzk0Il0sWyJEWEIiLCIyMDI1LTA3LTIxIiwiU0lOIixudWxsLCJFSyIsIjM0OCJdXV0="
+      "departure_token": "WyJDalJJY0dseVYxWlVXRGh4ZFd0QlFqQkxNWGRDUnkwdExTMHRMUzB0TFhscGJXUXhNRUZCUVVGQlIyZElNbE5SUm5ObVZrOUJFZ3hHV2pFM09UUjhSVXN6TkRnYUN3aVg1QWdRQWhvRFJWVlNPQnh3eFlVSyIsW1siWkFHIiwiMjAyNS0wNy0zMCIsIkRYQiIsbnVsbCwiRloiLCIxNzk0Il0sWyJEWEIiLCIyMDI1LTA3LTMxIiwiU0lOIixudWxsLCJFSyIsIjM0OCJdXV0="
     },
     {
       "flights": [
@@ -635,19 +487,19 @@
           "departure_airport": {
             "name": "Letališče Zagreb",
             "id": "ZAG",
-            "time": "2025-07-20 20:20"
+            "time": "2025-07-30 09:35"
           },
           "arrival_airport": {
             "name": "Istanbul Airport",
             "id": "IST",
-            "time": "2025-07-20 23:40"
+            "time": "2025-07-30 12:55"
           },
           "duration": 140,
           "airplane": "Airbus A321 (Sharklets)",
           "airline": "Turkish Airlines",
           "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
           "travel_class": "Economy",
-          "flight_number": "TK 1056",
+          "flight_number": "TK 1054",
           "legroom": "79 cm",
           "extensions": [
             "Average legroom (79 cm)",
@@ -661,246 +513,90 @@
           "departure_airport": {
             "name": "Istanbul Airport",
             "id": "IST",
-            "time": "2025-07-21 02:05"
+            "time": "2025-07-30 17:05"
           },
           "arrival_airport": {
             "name": "Letališče Singapur Changi",
             "id": "SIN",
-            "time": "2025-07-21 17:55"
+            "time": "2025-07-31 08:45"
           },
-          "duration": 650,
-          "airplane": "Boeing 777",
+          "duration": 640,
+          "airplane": "Airbus A350",
           "airline": "Turkish Airlines",
           "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
           "travel_class": "Economy",
-          "flight_number": "TK 54",
+          "flight_number": "TK 208",
           "legroom": "79 cm",
           "extensions": [
             "Average legroom (79 cm)",
             "Wi-Fi for a fee",
-            "In-seat power & USB outlets",
+            "In-seat USB outlet",
             "On-demand video",
-            "Carbon emissions estimate: 594 kg"
+            "Carbon emissions estimate: 504 kg"
           ],
           "overnight": true
         }
       ],
       "layovers": [
         {
-          "duration": 145,
+          "duration": 250,
           "name": "Istanbul Airport",
-          "id": "IST",
-          "overnight": true
+          "id": "IST"
         }
       ],
-      "total_duration": 935,
+      "total_duration": 1030,
       "carbon_emissions": {
-        "this_flight": 720000,
+        "this_flight": 629000,
         "typical_for_this_route": 713000,
-        "difference_percent": 1
+        "difference_percent": -12
       },
       "price": 1546,
       "type": "Round trip",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
-      "departure_token": "WyJDalJJWVZBNVVVczVSbFZUVld0QlEwMHRkVkZDUnkwdExTMHRMUzB0TFhscGRHOHhNMEZCUVVGQlIyZElNREZqVEZGT1kyVkJFZ3RVU3pFd05UWjhWRXMxTkJvTENJZTNDUkFDR2dORlZWSTRISENvNUFvPSIsW1siWkFHIiwiMjAyNS0wNy0yMCIsIklTVCIsbnVsbCwiVEsiLCIxMDU2Il0sWyJJU1QiLCIyMDI1LTA3LTIxIiwiU0lOIixudWxsLCJUSyIsIjU0Il1dXQ=="
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Heathrow Airport",
-            "id": "LHR",
-            "time": "2025-07-20 19:35"
-          },
-          "arrival_airport": {
-            "name": "Letališče Singapur Changi",
-            "id": "SIN",
-            "time": "2025-07-21 16:05"
-          },
-          "duration": 810,
-          "airplane": "Boeing 777",
-          "airline": "British Airways",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
-          "travel_class": "Economy",
-          "flight_number": "BA 11",
-          "legroom": "79 cm",
-          "extensions": [
-            "Average legroom (79 cm)",
-            "Wi-Fi for a fee",
-            "In-seat USB outlet",
-            "On-demand video",
-            "Carbon emissions estimate: 637 kg"
-          ],
-          "overnight": true
-        }
-      ],
-      "total_duration": 810,
-      "carbon_emissions": {
-        "this_flight": 638000,
-        "typical_for_this_route": 713000,
-        "difference_percent": -11
-      },
-      "price": 1704,
-      "type": "Round trip",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
-      "departure_token": "WyJDalJJWVZBNVVVczVSbFZUVld0QlEwMHRkVkZDUnkwdExTMHRMUzB0TFhscGRHOHhNMEZCUVVGQlIyZElNREZqVEZGT1kyVkJFZ1JDUVRFeEdnc0lnN01LRUFJYUEwVlZVamdjY0lueUN3PT0iLFtbIkxIUiIsIjIwMjUtMDctMjAiLCJTSU4iLG51bGwsIkJBIiwiMTEiXV1d"
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Heathrow Airport",
-            "id": "LHR",
-            "time": "2025-07-20 11:25"
-          },
-          "arrival_airport": {
-            "name": "Letališče Singapur Changi",
-            "id": "SIN",
-            "time": "2025-07-21 07:30"
-          },
-          "duration": 785,
-          "airplane": "Airbus A380",
-          "airline": "Singapore Airlines",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
-          "travel_class": "Economy",
-          "flight_number": "SQ 317",
-          "legroom": "81 cm",
-          "extensions": [
-            "Above average legroom (81 cm)",
-            "Free Wi-Fi",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 748 kg"
-          ],
-          "overnight": true
-        }
-      ],
-      "total_duration": 785,
-      "carbon_emissions": {
-        "this_flight": 749000,
-        "typical_for_this_route": 713000,
-        "difference_percent": 5
-      },
-      "type": "Round trip",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
-      "departure_token": "WyJDalJJWVZBNVVVczVSbFZUVld0QlEwMHRkVkZDUnkwdExTMHRMUzB0TFhscGRHOHhNMEZCUVVGQlIyZElNREZqVEZGT1kyVkJFZ1ZUVVRNeE56Z2MiLFtbIkxIUiIsIjIwMjUtMDctMjAiLCJTSU4iLG51bGwsIlNRIiwiMzE3Il1dXQ=="
+      "departure_token": "WyJDalJJY0dseVYxWlVXRGh4ZFd0QlFqQkxNWGRDUnkwdExTMHRMUzB0TFhscGJXUXhNRUZCUVVGQlIyZElNbE5SUm5ObVZrOUJFZ3hVU3pFd05UUjhWRXN5TURnYUN3aUh0d2tRQWhvRFJWVlNPQnh3cU9RSyIsW1siWkFHIiwiMjAyNS0wNy0zMCIsIklTVCIsbnVsbCwiVEsiLCIxMDU0Il0sWyJJU1QiLCIyMDI1LTA3LTMwIiwiU0lOIixudWxsLCJUSyIsIjIwOCJdXV0="
     }
   ],
-  "VCE,TRS,VIE,/m/04jpl": [
+  "VCE,TRS,VIE": [],
+  "SZG,LIN,MXP": [],
+  "MUC,STR,FCO": [
     {
       "flights": [
         {
           "departure_airport": {
-            "name": "Mednarodno letališče Dunaj",
-            "id": "VIE",
-            "time": "2025-07-20 23:35"
-          },
-          "arrival_airport": {
-            "name": "Letališče Suvarnabhumi",
-            "id": "BKK",
-            "time": "2025-07-21 14:50"
-          },
-          "duration": 615,
-          "airplane": "Boeing 777",
-          "airline": "Austrian",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OS.png",
-          "travel_class": "Economy",
-          "flight_number": "OS 25",
-          "legroom": "76 cm",
-          "extensions": [
-            "Average legroom (76 cm)",
-            "In-seat USB outlet",
-            "On-demand video",
-            "Carbon emissions estimate: 490 kg"
-          ],
-          "overnight": true
-        },
-        {
-          "departure_airport": {
-            "name": "Letališče Suvarnabhumi",
-            "id": "BKK",
-            "time": "2025-07-21 16:25"
-          },
-          "arrival_airport": {
-            "name": "Letališče Singapur Changi",
-            "id": "SIN",
-            "time": "2025-07-21 19:40"
-          },
-          "duration": 135,
-          "airplane": "Airbus A350",
-          "airline": "THAI",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TG.png",
-          "travel_class": "Economy",
-          "flight_number": "TG 409",
-          "ticket_also_sold_by": [
-            "Austrian"
-          ],
-          "legroom": "81 cm",
-          "extensions": [
-            "Above average legroom (81 cm)",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 127 kg"
-          ],
-          "often_delayed_by_over_30_min": true
-        }
-      ],
-      "layovers": [
-        {
-          "duration": 95,
-          "name": "Letališče Suvarnabhumi",
-          "id": "BKK"
-        }
-      ],
-      "total_duration": 845,
-      "carbon_emissions": {
-        "this_flight": 618000,
-        "typical_for_this_route": 685000,
-        "difference_percent": -10
-      },
-      "price": 1030,
-      "type": "Round trip",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "departure_token": "WyJDalJJYm01d2VIWnFlSFJtUTJ0QlF6VjRSWGRDUnkwdExTMHRMUzB0TFhaM2JYb3lNRUZCUVVGQlIyZElNREpWVDJnMmVGVkJFZ3BQVXpJMWZGUkhOREE1R2dzSXJhUUdFQUlhQTBWVlVqZ2NjT2VYQnc9PSIsW1siVklFIiwiMjAyNS0wNy0yMCIsIkJLSyIsbnVsbCwiT1MiLCIyNSJdLFsiQktLIiwiMjAyNS0wNy0yMSIsIlNJTiIsbnVsbCwiVEciLCI0MDkiXV1d"
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Mednarodno letališče Dunaj",
-            "id": "VIE",
-            "time": "2025-07-20 11:40"
+            "name": "Münchensko letališče",
+            "id": "MUC",
+            "time": "2025-07-30 11:25"
           },
           "arrival_airport": {
             "name": "Zayed International Airport",
             "id": "AUH",
-            "time": "2025-07-20 19:10"
+            "time": "2025-07-30 19:15"
           },
-          "duration": 330,
-          "airplane": "Boeing 777",
+          "duration": 350,
+          "airplane": "Boeing 787",
           "airline": "Etihad",
           "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
           "travel_class": "Economy",
-          "flight_number": "EY 154",
+          "flight_number": "EY 126",
           "legroom": "79 cm",
           "extensions": [
             "Average legroom (79 cm)",
             "Wi-Fi for a fee",
-            "In-seat power & USB outlets",
+            "In-seat USB outlet",
             "On-demand video",
-            "Carbon emissions estimate: 328 kg"
+            "Carbon emissions estimate: 263 kg"
           ]
         },
         {
           "departure_airport": {
             "name": "Zayed International Airport",
             "id": "AUH",
-            "time": "2025-07-20 21:45"
+            "time": "2025-07-30 21:45"
           },
           "arrival_airport": {
             "name": "Letališče Singapur Changi",
             "id": "SIN",
-            "time": "2025-07-21 09:40"
+            "time": "2025-07-31 09:40"
           },
           "duration": 475,
           "airplane": "Airbus A380",
@@ -921,423 +617,34 @@
       ],
       "layovers": [
         {
-          "duration": 155,
+          "duration": 150,
           "name": "Zayed International Airport",
           "id": "AUH"
         }
       ],
-      "total_duration": 960,
+      "total_duration": 975,
       "carbon_emissions": {
-        "this_flight": 759000,
-        "typical_for_this_route": 685000,
-        "difference_percent": 11
+        "this_flight": 694000,
+        "typical_for_this_route": 710000,
+        "difference_percent": -2
       },
-      "price": 1188,
+      "price": 1140,
       "type": "Round trip",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
-      "departure_token": "WyJDalJJYm01d2VIWnFlSFJtUTJ0QlF6VjRSWGRDUnkwdExTMHRMUzB0TFhaM2JYb3lNRUZCUVVGQlIyZElNREpWVDJnMmVGVkJFZ3RGV1RFMU5IeEZXVFE1T0JvTENMbWZCeEFDR2dORlZWSTRISERKcEFnPSIsW1siVklFIiwiMjAyNS0wNy0yMCIsIkFVSCIsbnVsbCwiRVkiLCIxNTQiXSxbIkFVSCIsIjIwMjUtMDctMjAiLCJTSU4iLG51bGwsIkVZIiwiNDk4Il1dXQ=="
+      "departure_token": "WyJDalJJT1dsV1IwZ3haRmR1YmxGQlJFUTBNWGRDUnkwdExTMHRMUzB0TFhSc1kyNDJOVUZCUVVGQlIyZElNbE4zUmxReVZHbEJFZ3RGV1RFeU5ueEZXVFE1T0JvTENJbjZCaEFDR2dORlZWSTRISERxK1FjPSIsW1siTVVDIiwiMjAyNS0wNy0zMCIsIkFVSCIsbnVsbCwiRVkiLCIxMjYiXSxbIkFVSCIsIjIwMjUtMDctMzAiLCJTSU4iLG51bGwsIkVZIiwiNDk4Il1dXQ=="
     },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Mednarodno letališče Dunaj",
-            "id": "VIE",
-            "time": "2025-07-20 20:15"
-          },
-          "arrival_airport": {
-            "name": "Letališče Zürich",
-            "id": "ZRH",
-            "time": "2025-07-20 21:35"
-          },
-          "duration": 80,
-          "airplane": "Airbus A320neo",
-          "airline": "SWISS",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
-          "travel_class": "Economy",
-          "flight_number": "LX 1583",
-          "legroom": "74 cm",
-          "extensions": [
-            "Below average legroom (74 cm)",
-            "Carbon emissions estimate: 57 kg"
-          ]
-        },
-        {
-          "departure_airport": {
-            "name": "Letališče Zürich",
-            "id": "ZRH",
-            "time": "2025-07-20 22:40"
-          },
-          "arrival_airport": {
-            "name": "Letališče Singapur Changi",
-            "id": "SIN",
-            "time": "2025-07-21 17:05"
-          },
-          "duration": 745,
-          "airplane": "Boeing 777",
-          "airline": "SWISS",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
-          "travel_class": "Economy",
-          "flight_number": "LX 176",
-          "legroom": "79 cm",
-          "extensions": [
-            "Average legroom (79 cm)",
-            "Wi-Fi for a fee",
-            "In-seat USB outlet",
-            "On-demand video",
-            "Carbon emissions estimate: 580 kg"
-          ],
-          "overnight": true
-        }
-      ],
-      "layovers": [
-        {
-          "duration": 65,
-          "name": "Letališče Zürich",
-          "id": "ZRH"
-        }
-      ],
-      "total_duration": 890,
-      "carbon_emissions": {
-        "this_flight": 638000,
-        "typical_for_this_route": 685000,
-        "difference_percent": -7
-      },
-      "price": 1198,
-      "type": "Round trip",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
-      "departure_token": "WyJDalJJYm01d2VIWnFlSFJtUTJ0QlF6VjRSWGRDUnkwdExTMHRMUzB0TFhaM2JYb3lNRUZCUVVGQlIyZElNREpWVDJnMmVGVkJFZ3hNV0RFMU9ETjhURmd4TnpZYUN3akNwd2NRQWhvRFJWVlNPQnh3NXEwSSIsW1siVklFIiwiMjAyNS0wNy0yMCIsIlpSSCIsbnVsbCwiTFgiLCIxNTgzIl0sWyJaUkgiLCIyMDI1LTA3LTIwIiwiU0lOIixudWxsLCJMWCIsIjE3NiJdXV0="
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Heathrow Airport",
-            "id": "LHR",
-            "time": "2025-07-20 11:25"
-          },
-          "arrival_airport": {
-            "name": "Letališče Singapur Changi",
-            "id": "SIN",
-            "time": "2025-07-21 07:30"
-          },
-          "duration": 785,
-          "airplane": "Airbus A380",
-          "airline": "Singapore Airlines",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
-          "travel_class": "Economy",
-          "flight_number": "SQ 317",
-          "legroom": "81 cm",
-          "extensions": [
-            "Above average legroom (81 cm)",
-            "Free Wi-Fi",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 748 kg"
-          ],
-          "overnight": true
-        }
-      ],
-      "total_duration": 785,
-      "carbon_emissions": {
-        "this_flight": 749000,
-        "typical_for_this_route": 685000,
-        "difference_percent": 9
-      },
-      "type": "Round trip",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
-      "departure_token": "WyJDalJJYm01d2VIWnFlSFJtUTJ0QlF6VjRSWGRDUnkwdExTMHRMUzB0TFhaM2JYb3lNRUZCUVVGQlIyZElNREpWVDJnMmVGVkJFZ1ZUVVRNeE56Z2MiLFtbIkxIUiIsIjIwMjUtMDctMjAiLCJTSU4iLG51bGwsIlNRIiwiMzE3Il1dXQ=="
-    }
-  ],
-  "SZG,LIN,MXP,/m/04jpl": [
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Letališče Salzburg",
-            "id": "SZG",
-            "time": "2025-07-20 19:15"
-          },
-          "arrival_airport": {
-            "name": "Istanbul Airport",
-            "id": "IST",
-            "time": "2025-07-20 22:50"
-          },
-          "duration": 155,
-          "airplane": "Boeing 737MAX 8 Passenger",
-          "airline": "Turkish Airlines",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
-          "travel_class": "Economy",
-          "flight_number": "TK 1384",
-          "legroom": "76 cm",
-          "extensions": [
-            "Average legroom (76 cm)",
-            "Wi-Fi for a fee",
-            "In-seat USB outlet",
-            "On-demand video",
-            "Carbon emissions estimate: 131 kg"
-          ]
-        },
-        {
-          "departure_airport": {
-            "name": "Istanbul Airport",
-            "id": "IST",
-            "time": "2025-07-21 02:05"
-          },
-          "arrival_airport": {
-            "name": "Letališče Singapur Changi",
-            "id": "SIN",
-            "time": "2025-07-21 17:55"
-          },
-          "duration": 650,
-          "airplane": "Boeing 777",
-          "airline": "Turkish Airlines",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
-          "travel_class": "Economy",
-          "flight_number": "TK 54",
-          "legroom": "79 cm",
-          "extensions": [
-            "Average legroom (79 cm)",
-            "Wi-Fi for a fee",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 594 kg"
-          ],
-          "overnight": true
-        }
-      ],
-      "layovers": [
-        {
-          "duration": 195,
-          "name": "Istanbul Airport",
-          "id": "IST",
-          "overnight": true
-        }
-      ],
-      "total_duration": 1000,
-      "carbon_emissions": {
-        "this_flight": 726000,
-        "typical_for_this_route": 710000,
-        "difference_percent": 2
-      },
-      "price": 1326,
-      "type": "Round trip",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
-      "departure_token": "WyJDalJJU1RSM2RHeHNNRlZ5YXpoQlEyUllUbWRDUnkwdExTMHRMUzB0TFhaM2FYVXhNa0ZCUVVGQlIyZElNRE5GUVc5Zk1YbEJFZ3RVU3pFek9EUjhWRXMxTkJvTENLdUxDQkFDR2dORlZWSTRISEQ1bndrPSIsW1siU1pHIiwiMjAyNS0wNy0yMCIsIklTVCIsbnVsbCwiVEsiLCIxMzg0Il0sWyJJU1QiLCIyMDI1LTA3LTIxIiwiU0lOIixudWxsLCJUSyIsIjU0Il1dXQ=="
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Letališče Salzburg",
-            "id": "SZG",
-            "time": "2025-07-20 19:00"
-          },
-          "arrival_airport": {
-            "name": "Letališče Frankfurt",
-            "id": "FRA",
-            "time": "2025-07-20 20:05"
-          },
-          "duration": 65,
-          "airplane": "Canadair RJ 900",
-          "airline": "Lufthansa",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-          "travel_class": "Economy",
-          "flight_number": "LH 1107",
-          "ticket_also_sold_by": [
-            "Austrian",
-            "Singapore Airlines"
-          ],
-          "legroom": "79 cm",
-          "extensions": [
-            "Average legroom (79 cm)",
-            "Carbon emissions estimate: 75 kg"
-          ],
-          "plane_and_crew_by": "Lufthansa CityLine"
-        },
-        {
-          "departure_airport": {
-            "name": "Letališče Frankfurt",
-            "id": "FRA",
-            "time": "2025-07-20 21:40"
-          },
-          "arrival_airport": {
-            "name": "Letališče Singapur Changi",
-            "id": "SIN",
-            "time": "2025-07-21 16:05"
-          },
-          "duration": 745,
-          "airplane": "Airbus A380",
-          "airline": "Singapore Airlines",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
-          "travel_class": "Economy",
-          "flight_number": "SQ 325",
-          "ticket_also_sold_by": [
-            "Lufthansa"
-          ],
-          "legroom": "81 cm",
-          "extensions": [
-            "Above average legroom (81 cm)",
-            "Free Wi-Fi",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 700 kg"
-          ],
-          "overnight": true
-        }
-      ],
-      "layovers": [
-        {
-          "duration": 95,
-          "name": "Letališče Frankfurt",
-          "id": "FRA"
-        }
-      ],
-      "total_duration": 905,
-      "carbon_emissions": {
-        "this_flight": 776000,
-        "typical_for_this_route": 710000,
-        "difference_percent": 9
-      },
-      "price": 1454,
-      "type": "Round trip",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "departure_token": "WyJDalJJU1RSM2RHeHNNRlZ5YXpoQlEyUllUbWRDUnkwdExTMHRMUzB0TFhaM2FYVXhNa0ZCUVVGQlIyZElNRE5GUVc5Zk1YbEJFZ3hNU0RFeE1EZDhVMUV6TWpVYUN3aXo3d2dRQWhvRFJWVlNPQnh3cjVJSyIsW1siU1pHIiwiMjAyNS0wNy0yMCIsIkZSQSIsbnVsbCwiTEgiLCIxMTA3Il0sWyJGUkEiLCIyMDI1LTA3LTIwIiwiU0lOIixudWxsLCJTUSIsIjMyNSJdXV0="
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Letališče Salzburg",
-            "id": "SZG",
-            "time": "2025-07-20 19:00"
-          },
-          "arrival_airport": {
-            "name": "Letališče Frankfurt",
-            "id": "FRA",
-            "time": "2025-07-20 20:05"
-          },
-          "duration": 65,
-          "airplane": "Canadair RJ 900",
-          "airline": "Lufthansa",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-          "travel_class": "Economy",
-          "flight_number": "LH 1107",
-          "ticket_also_sold_by": [
-            "Austrian",
-            "Singapore Airlines"
-          ],
-          "legroom": "79 cm",
-          "extensions": [
-            "Average legroom (79 cm)",
-            "Carbon emissions estimate: 75 kg"
-          ],
-          "plane_and_crew_by": "Lufthansa CityLine"
-        },
-        {
-          "departure_airport": {
-            "name": "Letališče Frankfurt",
-            "id": "FRA",
-            "time": "2025-07-20 21:55"
-          },
-          "arrival_airport": {
-            "name": "Letališče Singapur Changi",
-            "id": "SIN",
-            "time": "2025-07-21 16:25"
-          },
-          "duration": 750,
-          "airplane": "Boeing 747",
-          "airline": "Lufthansa",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-          "travel_class": "Economy",
-          "flight_number": "LH 780",
-          "ticket_also_sold_by": [
-            "Singapore Airlines"
-          ],
-          "legroom": "79 cm",
-          "extensions": [
-            "Average legroom (79 cm)",
-            "Wi-Fi for a fee",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 649 kg"
-          ],
-          "overnight": true,
-          "often_delayed_by_over_30_min": true
-        }
-      ],
-      "layovers": [
-        {
-          "duration": 110,
-          "name": "Letališče Frankfurt",
-          "id": "FRA"
-        }
-      ],
-      "total_duration": 925,
-      "carbon_emissions": {
-        "this_flight": 725000,
-        "typical_for_this_route": 710000,
-        "difference_percent": 2
-      },
-      "price": 1466,
-      "type": "Round trip",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-      "departure_token": "WyJDalJJU1RSM2RHeHNNRlZ5YXpoQlEyUllUbWRDUnkwdExTMHRMUzB0TFhaM2FYVXhNa0ZCUVVGQlIyZElNRE5GUVc5Zk1YbEJFZ3hNU0RFeE1EZDhURWczT0RBYUN3amorQWdRQWhvRFJWVlNPQnh3akowSyIsW1siU1pHIiwiMjAyNS0wNy0yMCIsIkZSQSIsbnVsbCwiTEgiLCIxMTA3Il0sWyJGUkEiLCIyMDI1LTA3LTIwIiwiU0lOIixudWxsLCJMSCIsIjc4MCJdXV0="
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Heathrow Airport",
-            "id": "LHR",
-            "time": "2025-07-20 11:25"
-          },
-          "arrival_airport": {
-            "name": "Letališče Singapur Changi",
-            "id": "SIN",
-            "time": "2025-07-21 07:30"
-          },
-          "duration": 785,
-          "airplane": "Airbus A380",
-          "airline": "Singapore Airlines",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
-          "travel_class": "Economy",
-          "flight_number": "SQ 317",
-          "legroom": "81 cm",
-          "extensions": [
-            "Above average legroom (81 cm)",
-            "Free Wi-Fi",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 748 kg"
-          ],
-          "overnight": true
-        }
-      ],
-      "total_duration": 785,
-      "carbon_emissions": {
-        "this_flight": 749000,
-        "typical_for_this_route": 710000,
-        "difference_percent": 5
-      },
-      "type": "Round trip",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
-      "departure_token": "WyJDalJJU1RSM2RHeHNNRlZ5YXpoQlEyUllUbWRDUnkwdExTMHRMUzB0TFhaM2FYVXhNa0ZCUVVGQlIyZElNRE5GUVc5Zk1YbEJFZ1ZUVVRNeE56Z2MiLFtbIkxIUiIsIjIwMjUtMDctMjAiLCJTSU4iLG51bGwsIlNRIiwiMzE3Il1dXQ=="
-    }
-  ],
-  "MUC,STR,FCO,/m/04jpl": [
     {
       "flights": [
         {
           "departure_airport": {
             "name": "Münchensko letališče",
             "id": "MUC",
-            "time": "2025-07-20 22:30"
+            "time": "2025-07-30 22:30"
           },
           "arrival_airport": {
             "name": "Dubai International Airport",
             "id": "DXB",
-            "time": "2025-07-21 06:30"
+            "time": "2025-07-31 06:30"
           },
           "duration": 360,
           "airplane": "Airbus A380",
@@ -1359,12 +666,12 @@
           "departure_airport": {
             "name": "Dubai International Airport",
             "id": "DXB",
-            "time": "2025-07-21 10:05"
+            "time": "2025-07-31 10:05"
           },
           "arrival_airport": {
             "name": "Letališče Singapur Changi",
             "id": "SIN",
-            "time": "2025-07-21 21:45"
+            "time": "2025-07-31 21:45"
           },
           "duration": 460,
           "airplane": "Airbus A380",
@@ -1395,10 +702,10 @@
         "typical_for_this_route": 710000,
         "difference_percent": 4
       },
-      "price": 1094,
+      "price": 1144,
       "type": "Round trip",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
-      "departure_token": "WyJDalJJZVdWNWJHUXdUSFp2U1RSQlJFWmFkMEZDUnkwdExTMHRMUzB0TFMxMGJHcDZPRUZCUVVGQlIyZElNRE5yUlROVVIwbEJFZ3BGU3pVeWZFVkxNelV5R2dzSTE5WUdFQUlhQTBWVlVqZ2NjSzdSQnc9PSIsW1siTVVDIiwiMjAyNS0wNy0yMCIsIkRYQiIsbnVsbCwiRUsiLCI1MiJdLFsiRFhCIiwiMjAyNS0wNy0yMSIsIlNJTiIsbnVsbCwiRUsiLCIzNTIiXV1d"
+      "departure_token": "WyJDalJJT1dsV1IwZ3haRmR1YmxGQlJFUTBNWGRDUnkwdExTMHRMUzB0TFhSc1kyNDJOVUZCUVVGQlIyZElNbE4zUmxReVZHbEJFZ3BGU3pVeWZFVkxNelV5R2dzSTMvMEdFQUlhQTBWVlVqZ2NjSVArQnc9PSIsW1siTVVDIiwiMjAyNS0wNy0zMCIsIkRYQiIsbnVsbCwiRUsiLCI1MiJdLFsiRFhCIiwiMjAyNS0wNy0zMSIsIlNJTiIsbnVsbCwiRUsiLCIzNTIiXV1d"
     },
     {
       "flights": [
@@ -1406,12 +713,12 @@
           "departure_airport": {
             "name": "Münchensko letališče",
             "id": "MUC",
-            "time": "2025-07-20 13:20"
+            "time": "2025-07-30 13:20"
           },
           "arrival_airport": {
             "name": "Bahrain International Airport",
             "id": "BAH",
-            "time": "2025-07-20 20:00"
+            "time": "2025-07-30 20:00"
           },
           "duration": 340,
           "airplane": "Airbus A321neo",
@@ -1432,12 +739,12 @@
           "departure_airport": {
             "name": "Bahrain International Airport",
             "id": "BAH",
-            "time": "2025-07-20 23:30"
+            "time": "2025-07-30 23:30"
           },
           "arrival_airport": {
             "name": "Letališče Singapur Changi",
             "id": "SIN",
-            "time": "2025-07-21 12:20"
+            "time": "2025-07-31 12:20"
           },
           "duration": 470,
           "airplane": "Boeing 787",
@@ -1469,113 +776,25 @@
         "typical_for_this_route": 710000,
         "difference_percent": 2
       },
-      "price": 1179,
+      "price": 1195,
       "type": "Round trip",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
-      "departure_token": "WyJDalJJZVdWNWJHUXdUSFp2U1RSQlJFWmFkMEZDUnkwdExTMHRMUzB0TFMxMGJHcDZPRUZCUVVGQlIyZElNRE5yUlROVVIwbEJFZ3BIUmpnMmZFZEdNVFkxR2dzSXNaZ0hFQUlhQTBWVlVqZ2NjTCtjQ0E9PSIsW1siTVVDIiwiMjAyNS0wNy0yMCIsIkJBSCIsbnVsbCwiR0YiLCI4NiJdLFsiQkFIIiwiMjAyNS0wNy0yMCIsIlNJTiIsbnVsbCwiR0YiLCIxNjUiXV1d"
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Münchensko letališče",
-            "id": "MUC",
-            "time": "2025-07-20 12:30"
-          },
-          "arrival_airport": {
-            "name": "Letališče Singapur Changi",
-            "id": "SIN",
-            "time": "2025-07-21 06:40"
-          },
-          "duration": 730,
-          "airplane": "Airbus A350",
-          "airline": "Singapore Airlines",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
-          "travel_class": "Economy",
-          "flight_number": "SQ 327",
-          "ticket_also_sold_by": [
-            "Lufthansa"
-          ],
-          "legroom": "81 cm",
-          "extensions": [
-            "Above average legroom (81 cm)",
-            "Free Wi-Fi",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 608 kg"
-          ],
-          "overnight": true
-        }
-      ],
-      "total_duration": 730,
-      "carbon_emissions": {
-        "this_flight": 609000,
-        "typical_for_this_route": 710000,
-        "difference_percent": -14
-      },
-      "price": 1432,
-      "type": "Round trip",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
-      "departure_token": "WyJDalJJZVdWNWJHUXdUSFp2U1RSQlJFWmFkMEZDUnkwdExTMHRMUzB0TFMxMGJHcDZPRUZCUVVGQlIyZElNRE5yUlROVVIwbEJFZ1ZUVVRNeU54b0xDSVBlQ0JBQ0dnTkZWVkk0SEhEQS9naz0iLFtbIk1VQyIsIjIwMjUtMDctMjAiLCJTSU4iLG51bGwsIlNRIiwiMzI3Il1dXQ=="
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Münchensko letališče",
-            "id": "MUC",
-            "time": "2025-07-20 22:20"
-          },
-          "arrival_airport": {
-            "name": "Letališče Singapur Changi",
-            "id": "SIN",
-            "time": "2025-07-21 16:40"
-          },
-          "duration": 740,
-          "airplane": "Airbus A350",
-          "airline": "Lufthansa",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-          "travel_class": "Economy",
-          "flight_number": "LH 768",
-          "ticket_also_sold_by": [
-            "Singapore Airlines"
-          ],
-          "legroom": "79 cm",
-          "extensions": [
-            "Average legroom (79 cm)",
-            "Wi-Fi for a fee",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 519 kg"
-          ],
-          "overnight": true
-        }
-      ],
-      "total_duration": 740,
-      "carbon_emissions": {
-        "this_flight": 519000,
-        "typical_for_this_route": 710000,
-        "difference_percent": -27
-      },
-      "price": 1444,
-      "type": "Round trip",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-      "departure_token": "WyJDalJJZVdWNWJHUXdUSFp2U1RSQlJFWmFkMEZDUnkwdExTMHRMUzB0TFMxMGJHcDZPRUZCUVVGQlIyZElNRE5yUlROVVIwbEJFZ1ZNU0RjMk9Cb0xDTFBuQ0JBQ0dnTkZWVkk0SEhDY2lRbz0iLFtbIk1VQyIsIjIwMjUtMDctMjAiLCJTSU4iLG51bGwsIkxIIiwiNzY4Il1dXQ=="
+      "departure_token": "WyJDalJJT1dsV1IwZ3haRmR1YmxGQlJFUTBNWGRDUnkwdExTMHRMUzB0TFhSc1kyNDJOVUZCUVVGQlIyZElNbE4zUmxReVZHbEJFZ3BIUmpnMmZFZEdNVFkxR2dzSThhUUhFQUlhQTBWVlVqZ2NjT1dxQ0E9PSIsW1siTVVDIiwiMjAyNS0wNy0zMCIsIkJBSCIsbnVsbCwiR0YiLCI4NiJdLFsiQkFIIiwiMjAyNS0wNy0zMCIsIlNJTiIsbnVsbCwiR0YiLCIxNjUiXV1d"
     }
   ],
-  "BUD,PRG,ZRH,/m/04jpl": [
+  "BUD,PRG,ZRH": [
     {
       "flights": [
         {
           "departure_airport": {
             "name": "Letališče Vaclava Havla",
             "id": "PRG",
-            "time": "2025-07-20 16:10"
+            "time": "2025-07-30 16:10"
           },
           "arrival_airport": {
             "name": "Dubai International Airport",
             "id": "DXB",
-            "time": "2025-07-20 23:55"
+            "time": "2025-07-30 23:55"
           },
           "duration": 345,
           "airplane": "Airbus A380",
@@ -1596,12 +815,12 @@
           "departure_airport": {
             "name": "Dubai International Airport",
             "id": "DXB",
-            "time": "2025-07-21 03:05"
+            "time": "2025-07-31 03:05"
           },
           "arrival_airport": {
             "name": "Letališče Singapur Changi",
             "id": "SIN",
-            "time": "2025-07-21 15:00"
+            "time": "2025-07-31 15:00"
           },
           "duration": 475,
           "airplane": "Airbus A380",
@@ -1631,88 +850,13 @@
       "total_duration": 1010,
       "carbon_emissions": {
         "this_flight": 726000,
-        "typical_for_this_route": 723000,
+        "typical_for_this_route": 725000,
         "difference_percent": 0
       },
-      "price": 1093,
+      "price": 1040,
       "type": "Round trip",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
-      "departure_token": "WyJDalJJZERGamNqazBiV2RZTUdOQlJGSjZka0ZDUnkwdExTMHRMUzB0TFc5NVkycGlOMEZCUVVGQlIyZElNRFJWU0U4emNVVkJFZ3RGU3pFME1IeEZTek0xTkJvTENLdlZCaEFDR2dORlZWSTRISERwendjPSIsW1siUFJHIiwiMjAyNS0wNy0yMCIsIkRYQiIsbnVsbCwiRUsiLCIxNDAiXSxbIkRYQiIsIjIwMjUtMDctMjEiLCJTSU4iLG51bGwsIkVLIiwiMzU0Il1dXQ=="
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Letališče Franza Liszta Budimpešta",
-            "id": "BUD",
-            "time": "2025-07-20 20:30"
-          },
-          "arrival_airport": {
-            "name": "Istanbul Airport",
-            "id": "IST",
-            "time": "2025-07-20 23:40"
-          },
-          "duration": 130,
-          "airplane": "Airbus A321 (Sharklets)",
-          "airline": "Turkish Airlines",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
-          "travel_class": "Economy",
-          "flight_number": "TK 1038",
-          "legroom": "79 cm",
-          "extensions": [
-            "Average legroom (79 cm)",
-            "Wi-Fi for a fee",
-            "In-seat USB outlet",
-            "On-demand video",
-            "Carbon emissions estimate: 118 kg"
-          ]
-        },
-        {
-          "departure_airport": {
-            "name": "Istanbul Airport",
-            "id": "IST",
-            "time": "2025-07-21 02:05"
-          },
-          "arrival_airport": {
-            "name": "Letališče Singapur Changi",
-            "id": "SIN",
-            "time": "2025-07-21 17:55"
-          },
-          "duration": 650,
-          "airplane": "Boeing 777",
-          "airline": "Turkish Airlines",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
-          "travel_class": "Economy",
-          "flight_number": "TK 54",
-          "legroom": "79 cm",
-          "extensions": [
-            "Average legroom (79 cm)",
-            "Wi-Fi for a fee",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 594 kg"
-          ],
-          "overnight": true
-        }
-      ],
-      "layovers": [
-        {
-          "duration": 145,
-          "name": "Istanbul Airport",
-          "id": "IST",
-          "overnight": true
-        }
-      ],
-      "total_duration": 925,
-      "carbon_emissions": {
-        "this_flight": 713000,
-        "typical_for_this_route": 723000,
-        "difference_percent": -1
-      },
-      "price": 1166,
-      "type": "Round trip",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
-      "departure_token": "WyJDalJJZERGamNqazBiV2RZTUdOQlJGSjZka0ZDUnkwdExTMHRMUzB0TFc5NVkycGlOMEZCUVVGQlIyZElNRFJWU0U4emNVVkJFZ3RVU3pFd016aDhWRXMxTkJvTENNK09CeEFDR2dORlZWSTRISENwa1FnPSIsW1siQlVEIiwiMjAyNS0wNy0yMCIsIklTVCIsbnVsbCwiVEsiLCIxMDM4Il0sWyJJU1QiLCIyMDI1LTA3LTIxIiwiU0lOIixudWxsLCJUSyIsIjU0Il1dXQ=="
+      "departure_token": "WyJDalJJVm5scU1raEJXbGRKWWxWQlEwZ3hNMmRDUnkwdExTMHRMUzB0TFMxMmRISmhOMEZCUVVGQlIyZElNbFZ6UzJaSmF6SkJFZ3RGU3pFME1IeEZTek0xTkJvTENPaXJCaEFDR2dORlZWSTRISENyb0FjPSIsW1siUFJHIiwiMjAyNS0wNy0zMCIsIkRYQiIsbnVsbCwiRUsiLCIxNDAiXSxbIkRYQiIsIjIwMjUtMDctMzEiLCJTSU4iLG51bGwsIkVLIiwiMzU0Il1dXQ=="
     },
     {
       "flights": [
@@ -1720,12 +864,12 @@
           "departure_airport": {
             "name": "Letališče Vaclava Havla",
             "id": "PRG",
-            "time": "2025-07-20 11:20"
+            "time": "2025-07-30 11:20"
           },
           "arrival_airport": {
             "name": "Zayed International Airport",
             "id": "AUH",
-            "time": "2025-07-20 19:05"
+            "time": "2025-07-30 19:05"
           },
           "duration": 345,
           "airplane": "Boeing 787",
@@ -1746,12 +890,12 @@
           "departure_airport": {
             "name": "Zayed International Airport",
             "id": "AUH",
-            "time": "2025-07-20 21:45"
+            "time": "2025-07-30 21:45"
           },
           "arrival_airport": {
             "name": "Letališče Singapur Changi",
             "id": "SIN",
-            "time": "2025-07-21 09:40"
+            "time": "2025-07-31 09:40"
           },
           "duration": 475,
           "airplane": "Airbus A380",
@@ -1780,13 +924,86 @@
       "total_duration": 980,
       "carbon_emissions": {
         "this_flight": 706000,
-        "typical_for_this_route": 723000,
-        "difference_percent": -2
+        "typical_for_this_route": 725000,
+        "difference_percent": -3
       },
-      "price": 1170,
+      "price": 1087,
       "type": "Round trip",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
-      "departure_token": "WyJDalJJZERGamNqazBiV2RZTUdOQlJGSjZka0ZDUnkwdExTMHRMUzB0TFc5NVkycGlOMEZCUVVGQlIyZElNRFJWU0U4emNVVkJFZ3RGV1RFMU5ueEZXVFE1T0JvTENLK1JCeEFDR2dORlZWSTRISEM4bEFnPSIsW1siUFJHIiwiMjAyNS0wNy0yMCIsIkFVSCIsbnVsbCwiRVkiLCIxNTYiXSxbIkFVSCIsIjIwMjUtMDctMjAiLCJTSU4iLG51bGwsIkVZIiwiNDk4Il1dXQ=="
+      "departure_token": "WyJDalJJVm5scU1raEJXbGRKWWxWQlEwZ3hNMmRDUnkwdExTMHRMUzB0TFMxMmRISmhOMEZCUVVGQlIyZElNbFZ6UzJaSmF6SkJFZ3RGV1RFMU5ueEZXVFE1T0JvTENOWFFCaEFDR2dORlZWSTRISEM5eWdjPSIsW1siUFJHIiwiMjAyNS0wNy0zMCIsIkFVSCIsbnVsbCwiRVkiLCIxNTYiXSxbIkFVSCIsIjIwMjUtMDctMzAiLCJTSU4iLG51bGwsIkVZIiwiNDk4Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Letališče Vaclava Havla",
+            "id": "PRG",
+            "time": "2025-07-30 10:00"
+          },
+          "arrival_airport": {
+            "name": "Mednarodno letališče Hamad",
+            "id": "DOH",
+            "time": "2025-07-30 16:50"
+          },
+          "duration": 350,
+          "airplane": "Airbus A330",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 290",
+          "legroom": "86 cm",
+          "extensions": [
+            "Above average legroom (86 cm)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 297 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Mednarodno letališče Hamad",
+            "id": "DOH",
+            "time": "2025-07-30 19:45"
+          },
+          "arrival_airport": {
+            "name": "Letališče Singapur Changi",
+            "id": "SIN",
+            "time": "2025-07-31 09:00"
+          },
+          "duration": 495,
+          "airplane": "Airbus A350",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 942",
+          "legroom": "79 cm",
+          "extensions": [
+            "Average legroom (79 cm)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 412 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 175,
+          "name": "Mednarodno letališče Hamad",
+          "id": "DOH"
+        }
+      ],
+      "total_duration": 1020,
+      "carbon_emissions": {
+        "this_flight": 710000,
+        "typical_for_this_route": 725000,
+        "difference_percent": -2
+      },
+      "price": 1128,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+      "departure_token": "WyJDalJJVm5scU1raEJXbGRKWWxWQlEwZ3hNMmRDUnkwdExTMHRMUzB0TFMxMmRISmhOMEZCUVVGQlIyZElNbFZ6UzJaSmF6SkJFZ3RSVWpJNU1IeFJVamswTWhvTENPandCaEFDR2dORlZWSTRISENmN3djPSIsW1siUFJHIiwiMjAyNS0wNy0zMCIsIkRPSCIsbnVsbCwiUVIiLCIyOTAiXSxbIkRPSCIsIjIwMjUtMDctMzAiLCJTSU4iLG51bGwsIlFSIiwiOTQyIl1dXQ=="
     }
   ]
 }

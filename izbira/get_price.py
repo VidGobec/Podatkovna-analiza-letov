@@ -1,8 +1,8 @@
 from serpapi import GoogleSearch
 import json
 
-letalisca1 = "LJU,KLU,GRZ,/m/04jpl"
-letalisca = ["ZAG,TRS,TSF,/m/04jpl", "VCE,TRS,VIE,/m/04jpl", "SZG,LIN,MXP,/m/04jpl", "MUC,STR,FCO,/m/04jpl", "BUD,PRG,ZRH,/m/04jpl"]
+letalisca1 = "LJU,KLU,GRZ"
+letalisca = ["ZAG,TRS,TSF", "VCE,TRS,VIE", "SZG,LIN,MXP", "MUC,STR,FCO", "BUD,PRG,ZRH"]
 destinacija = input("Vpiši IATA kodo kam želiš leteti: ").upper()
 datum = input("Vpiši termin (format: YYYY-MM-DD - YYYY-MM-DD): ")
 
@@ -13,7 +13,7 @@ except ValueError:
     exit()
 
 key = "9aa8f07a4838c4c78081cbafe35b26cd7389b628269b05fe8304a3e55f902c47"
-
+    
 # Rezultati se shranijo tukaj
 vsi_rezultati = {}
 
