@@ -14,7 +14,16 @@ class IzbiralecLetov:
                                     }
         self._tabela_primerjanj = []
         self._zadnjaKulUra = 8
+        self._budget = None #none predstavlja neskončno v tem primeru
         pass
+
+    def set_budget(self, budget):
+        """nastavi svoj budget za izlet"""
+        self._budget = budget
+
+    def get_budget(self):
+        """vrne budget, ki ste ga nastavili"""
+        return self._budget
 
     def get_preferenca(self):
         """vrne trenutno shranjen preferencni slovar"""
@@ -170,7 +179,7 @@ class IzbiralecLetov:
         maxv = max(tabela_primerjanj[0])
         i = 0
         while i < st_vseh_opcij:
-            ocene[i] += f.linearen_utility(tabela_primerjanj[0][i], minv, maxv) * self.get_preferenca()["cena"]
+            ocene[i] += f.cena_z_budgetom(tabela_primerjanj[0][i], minv, maxv, self.get_budget()) * self.get_preferenca()["cena"]
             i += 1
         return ocene
     
