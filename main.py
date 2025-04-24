@@ -13,21 +13,19 @@ for beseda in niz:
     print(beseda, end=' ', flush=True)
     time.sleep(0.07)
 
-time.sleep(0.3)
+time.sleep(0.7)
 print("\n\n- Iz seznama izbereš številko, tistega, kar želiš, da se izvede s nizom, pri čemer so številke ločene z vejico (npr. '1,3,4')")
 print("\nSedaj pa izberi iz seznama!")
 print("\n1 - statistika letov po svetu\n2 - statistika letov po evropi\n3 - dodajanje podatkov k statistiki\n4 - iskalnik letov\n5 - iskalnik letov iz bližnjih letališč\n")
 izbira = input("Vnesi številke iz seznama (ločene z vejico): ")
 try:
     izbira = izbira.split(",")
+    izbira = [int(st) for st in izbira]
     print(izbira)
 except ValueError:
-    izbira = [izbira]
+    izbira = [int(izbira)]
     print(izbira)
 
-    
-dodajanje_podatkov = input("Ali želiš dodati podatke za statistiko letov po svetu (Da/Ne)?: ").capitalize()
-if dodajanje_podatkov == "Da":
     iata_input = input("Vpiši iato kodo od letališča: ")
     if iata.iata(iata_input):
         novi_podatki = []
@@ -50,7 +48,7 @@ if dodajanje_podatkov == "Da":
         print("\nNalaganje podatkov je končano!\n")
 #print("Prišlo je do napake pri pridobivanju podatkov!") #Če so requesti že porabljeni
     else:
-        print("\n⚠️ Vpiši veljavno IATA kodo!\n")
+        print("\nVpiši veljavno IATA kodo!\n")
 
 pridobivanje_statistike = input("Ali želiš pridobiti statistiko letov po svetu ali Evropi (Da/Ne)?: ").capitalize()
 samo_evropa = input("Ali želiš podatke samo za Evropo (Da/Ne): ").capitalize()

@@ -278,7 +278,3 @@ class IzbiralecLetov:
             minute = cas_potovanja % (ure*60)
             print(f"Celotni čas potovanja: {ure} h {minute} min")
             print("------------------------------------------------------------")
-            
-            
-
-        

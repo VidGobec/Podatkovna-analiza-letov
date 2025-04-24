@@ -9,10 +9,10 @@ if iata.iata(destinacija):
     try:
         odhod_datum, prihod_datum = datum.split(" - ")
     except ValueError:
-        print("\n⚠️ Napačni format za datum. Uporabi format YYYY-MM-DD - YYYY-MM-DD.\n")
+        print("\n Napačni format za datum. Uporabi format YYYY-MM-DD - YYYY-MM-DD.\n")
         exit()
     izbiralec = IzbiralecLetov()
     vsi_rezultati = izbiralec.najbolsi_let(letalisca, destinacija, odhod_datum, prihod_datum, n=5)
     izbiralec.izpisi_podatke_o_letih(vsi_rezultati)
 else:
-    print("\n⚠️ Vpiši veljavno IATA kodo!\n")
+    print("\n Vpiši veljavno IATA kodo!\n")
