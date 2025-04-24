@@ -7,8 +7,3 @@ def iata(iata):
     res = requests.get(url)
     data = res.json()
     return iata in [letalisce["iata"] for letalisce in data]
-
-evropa_iata = ["DEN", "CAN", "HKG", "CTU", "SZX", "CKG", "MIA", "PHX", "SEA", "LAS"]
-
-for letalisce in evropa_iata:
-    print(iata(letalisce))

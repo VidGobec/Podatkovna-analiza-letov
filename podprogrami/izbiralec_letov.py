@@ -3,7 +3,7 @@ from serpapi import GoogleSearch
 import utility_funkcije as f
 import math
 
-class izbiralec_letov:
+class IzbiralecLetov:
     def __init__(self) -> None:
         self._preferenca = { 
                                     "cena": 1,
@@ -76,17 +76,23 @@ class izbiralec_letov:
         self._tabela_primerjanj.append([x["carbon_emissions"]["this_flight"] for x in tabela_letov])
 
     @staticmethod
-    def pridobi_lete(iz, kam, datum_tja, datum_nazaj = ""):
-        """funkcija, ki sprejme letalisce iz katerega gremo, letalisce v katerega hocemo prispeti, cas odhoda ko gremo tja in cas odhoda
-        ko gremo nazaj. iz (letalisce iz katerega gremo) je lahko tudi tabela vecih letalisc.
+    def pridobi_lete(iz_kje, kam, datum_tja, datum_nazaj = ""):
+        """Funkcija, ki sprejme letalisce iz katerega gremo, letalisce v katerega hocemo prispeti, cas odhoda ko gremo tja in cas odhoda
+        ko gremo nazaj. Iz (letalisce iz katerega gremo) je lahko tudi tabela vecih letalisc.
         """
         key = "9aa8f07a4838c4c78081cbafe35b26cd7389b628269b05fe8304a3e55f902c47"
-        leti = []
-
-        if type(iz) == str:
-            iz = [iz]
-
-        for iz_i in iz:
+        letalisca = []
+        if isinstance(iz_kje, str) and len(iz_kje) == 3:
+            letalisca = [iz_kje]
+        else:
+            iz_kje = [iz_kje]
+        iz_kje = [letalisce for letalisca in iz_kje for letalisce in letalisca.split(",")]
+        if isinstance(iz_kje, list) and len(iz_kje) > 3:
+            for i in range(0, len(iz_kje), 3):
+                zdruzeno = ','.join(iz_kje[i:i+3])
+                letalisca.append(zdruzeno)
+        vsi_leti = []
+        for iz_i in letalisca:
             params = {
                 "type" : 2,
                 "engine": "google_flights",
@@ -94,27 +100,34 @@ class izbiralec_letov:
                 "arrival_id": kam,
                 "outbound_date": datum_tja,
                 "currency": "EUR",
-                "hl": "en",
+                "hl": "sl",
                 "api_key": key
             } 
-            if datum_nazaj != "":
+            if datum_nazaj:
                 params["type"] = 1
                 params["return_date"] = datum_nazaj
             search = GoogleSearch(params)
             results = search.get_json()
             try:
-                leti = leti + results["best_flights"] + results["other_flights"]
+                kombinirani_leti = results["best_flights"] + results["other_flights"]
+                for let in kombinirani_leti:
+                    try:
+                        _ = let["price"]
+                        _ = let["layovers"]
+                        _ = let["flights"]
+                        _ = let["carbon_emissions"]["this_flight"]
+                        vsi_leti.append(let)
+                    except KeyError:
+                        continue  # ignoriramo nepopoln let
             except:
-                print(f"napaka pri dobivanju podatkov za lete iz {iz_i}")
-        return leti
-
-
+                print(f"Napaka pri pridobivanju podatkov za lete iz {iz_i}")
+        return vsi_leti
 
 
     def najbolsi_let(self, iz, kam, datum_tja, datum_nazaj = 0, n = 1):
         """vrne n najbolsih letov v urejenem seznamu (urejen po oceni nasih preferenc)"""
         try:
-            tabela_letov = izbiralec_letov.pridobi_lete(iz, kam, datum_tja, datum_nazaj)
+            tabela_letov = IzbiralecLetov.pridobi_lete(iz, kam, datum_tja, datum_nazaj)
         except: #zalomi se ce ne najde letov zato vrnemo prazen seznam
             return []
 
@@ -209,3 +222,63 @@ class izbiralec_letov:
             i += 1
         return ocene
     
+    def izpisi_podatke_o_letih(self, rezultati):
+        """Funkcija izpiše pomembne podatke o letu.
+        """
+        print("============================================================")
+        print(f"Let v {rezultati[0]["flights"][-1]["arrival_airport"]["name"]} ({rezultati[0]["flights"][-1]["arrival_airport"]["id"]})")
+        print("============================================================")
+
+        for i, let in enumerate(rezultati):
+            print(f"Let št. {i+1}")
+            print("------------------------------------------------------------")
+            print(f"Odhod letališče: {let["flights"][0]["departure_airport"]["name"]} ({let["flights"][0]["departure_airport"]["id"]})")
+            print(f"Datum odhoda: {let["flights"][0]["departure_airport"]["time"]}")
+            try:
+                st_prestopanj = len(let["layovers"])
+            except KeyError:
+                st_prestopanj = 0
+                print("Brez prestopov!")
+            
+            if st_prestopanj == 0:
+                print(f"Letalska družba: {let["flights"][0]["airline"]}")
+            else:
+                for i in range(st_prestopanj):
+                    print(f"\n> Let {i+1}")
+                    print(f"Letalska družba: {let["flights"][i]["airline"]}")
+                    print(f"Relacija: {let["flights"][i]["departure_airport"]["name"]} ({let["flights"][i]["departure_airport"]["name"]}) → {let["flights"][i]["arrival_airport"]["name"]} ({let["flights"][i]["arrival_airport"]["id"]})")
+                    cas_leta = let["flights"][i]["duration"]
+                    ure = cas_leta // 60
+                    if ure != 0:
+                        minute = cas_leta % (ure*60)
+                    else:
+                        minute = cas_leta
+                    print(f"Čas letenja: {ure} h {minute} min")
+                    cas_prestopa = let["layovers"][i]["duration"]
+                    ure = cas_prestopa // 60
+                    if ure != 0:
+                        minute = cas_prestopa % (ure*60)
+                    else:
+                        minute = cas_prestopa
+                    print(f"Čas prestopa: {ure} h {minute} min")
+                print(f"\n> Let {st_prestopanj + 1}")
+                print(f"Letalska družba: {let["flights"][-1]["airline"]}")
+                print(f"Relacija: {let["flights"][-1]["departure_airport"]["name"]} ({let["flights"][-1]["departure_airport"]["name"]}) → {let["flights"][-1]["arrival_airport"]["name"]} ({let["flights"][-1]["arrival_airport"]["id"]})")
+                cas_leta = let["flights"][-1]["duration"]
+                ure = cas_leta // 60
+                if ure != 0:
+                    minute = cas_leta % (ure*60)
+                else:
+                    minute = cas_leta
+                print(f"Čas letenja: {ure} h {minute} min")
+
+            print(f"\n\nCena vozovnice: {let["price"]}€")
+            cas_potovanja = let["total_duration"] 
+            ure = cas_potovanja // 60
+            minute = cas_potovanja % (ure*60)
+            print(f"Celotni čas potovanja: {ure} h {minute} min")
+            print("------------------------------------------------------------")
+            
+            
+
+        

@@ -1,4 +1,4 @@
-from izbiralec_letov import izbiralec_letov
+from podprogrami.izbiralec_letov import IzbiralecLetov
 import os
 
 #start program za "aplikacijo"
@@ -18,7 +18,7 @@ def vnesi_datum(msg = "vpisite datum (yyyy-mm-dd): "):
 #funkcija ki izbrise tekst na terminalu
 clear = lambda: os.system('cls' if os.name=='nt' else 'clear')
 
-izbiralec = izbiralec_letov()
+izbiralec = IzbiralecLetov()
 
 
 

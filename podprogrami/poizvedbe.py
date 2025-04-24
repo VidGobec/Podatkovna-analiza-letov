@@ -1,6 +1,3 @@
-
-
-
 class poizvedbe():
     def __init__(self, json):
           self._data = json

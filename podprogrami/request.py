@@ -2,7 +2,7 @@ import requests
 import json
 from enum import Enum
 
-from evropa import evropa_iata
+from podprogrami.evropa import evropa_iata
 
 class endpoint(Enum):
     FLIGHTS = "flights"
