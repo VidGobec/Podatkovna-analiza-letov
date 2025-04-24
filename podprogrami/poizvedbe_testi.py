@@ -1,7 +1,9 @@
 from poizvedbe import poizvedbe
 import json
+import os
 
-with open('podatki_svet.json', 'r') as file:
+pot = os.path.join('Podatki', 'podatki_svet.json')
+with open(pot, 'r') as file:
     data = json.load(file)
 
 
@@ -44,9 +46,11 @@ print(f"povp vrednost zamude letal v prihodu je {povp}")
 
 print("\n\n")
 ##graf letalisc in povprecnih zamud na letalisce
-with open('podatki_svet.json', 'r') as file:
+pot = os.path.join('Podatki', 'podatki_svet.json')
+with open(pot, 'r') as file:
     data = poizvedbe(json.load(file))
-with open('vsa_letalisca.json', 'r') as file:
+pot = os.path.join('Podatki', 'vsa_letalisca.json')
+with open(pot, 'r') as file:
     data_letalisa = json.load(file)
 
 data_po_letaliscih = data.get_grouped_data(["departure","airport"])
@@ -63,11 +67,10 @@ for letalisce, leti in data_po_letaliscih.items():
     except:
         pass
 
-print(tabela_zamud_po_letaliscih) 
+#print(tabela_zamud_po_letaliscih) 
 #graf gostote zamujanja po letaliscih
 import matplotlib.pyplot as plt
-ax = plt.subplots()
-
+fig, ax = plt.subplots()
 
 #background
 import geopandas
@@ -82,8 +85,8 @@ tab_y = [x[1] for x in tabela_zamud_po_letaliscih]
 skalar = 30 #za povecavo poprecja zamud na grafu
 tab_povpzamuda = [x[2]*skalar for x in tabela_zamud_po_letaliscih]
 
-ax.scatter(tab_x, tab_y, s=tab_povpzamuda, c="red", alpha = 0.3,edgecolors=None, vmin=0, vmax=100)
-ax.scatter(tab_x, tab_y, s=15, c="blue", vmin=0, vmax=100)
+ax.scatter(tab_x, tab_y, s=tab_povpzamuda, c="red", alpha = 0.3,edgecolors=None)
+ax.scatter(tab_x, tab_y, s=15, c="blue")
 
 
 plt.show()
