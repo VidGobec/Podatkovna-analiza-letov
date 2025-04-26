@@ -30,11 +30,10 @@ while inp != "":
     for opcija in opcije:
         print(opcija)
     inp = input("vnesite ukaz: ")
-    clear()
     #planiranje leta
     if inp == "1":
-        inp = input("zelite nastaviti svoje preference? (y,n): ")
-        if inp == "y":
+        inp = input("zelite nastaviti svoje preference? (ja,ne): ")
+        if inp == "ja":
             izbiralec.vpis_preference()
             izbiralec.vpis_sprejemljive_ure_cakanja()
         datum1 = vnesi_datum("vpisite datum (yyyy-mm-dd): ")

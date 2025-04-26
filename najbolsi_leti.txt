@@ -1,0 +1,40 @@
+1
+letalska druzba: Qatar Airways
+cena: 899 EUR
+cas potovanja: 1085 min
+karbonske emisije: 866000 kg CO2
+Letališče Zagreb-> QR 218 ->Mednarodno letališče Hamad
+Mednarodno letališče Hamad-> QR 948 ->Letališče Singapur Changi
+
+2
+letalska druzba: Qatar Airways
+cena: 899 EUR
+cas potovanja: 1085 min
+karbonske emisije: 866000 kg CO2
+Letališče Zagreb-> QR 218 ->Mednarodno letališče Hamad
+Mednarodno letališče Hamad-> QR 948 ->Letališče Singapur Changi
+
+3
+letalska druzba: Qatar Airways
+cena: 899 EUR
+cas potovanja: 1085 min
+karbonske emisije: 866000 kg CO2
+Letališče Zagreb-> QR 218 ->Mednarodno letališče Hamad
+Mednarodno letališče Hamad-> QR 948 ->Letališče Singapur Changi
+
+4
+letalska druzba: Qatar Airways
+cena: 899 EUR
+cas potovanja: 1085 min
+karbonske emisije: 866000 kg CO2
+Letališče Zagreb-> QR 218 ->Mednarodno letališče Hamad
+Mednarodno letališče Hamad-> QR 948 ->Letališče Singapur Changi
+
+5
+letalska druzba: Qatar Airways
+cena: 899 EUR
+cas potovanja: 1085 min
+karbonske emisije: 866000 kg CO2
+Letališče Zagreb-> QR 218 ->Mednarodno letališče Hamad
+Mednarodno letališče Hamad-> QR 948 ->Letališče Singapur Changi
+

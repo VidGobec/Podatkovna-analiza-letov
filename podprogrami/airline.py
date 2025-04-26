@@ -1,7 +1,10 @@
 import json
 import matplotlib.pyplot as plt
 import time
+import os
 
+
+#pot = os.path.join('Podatki', 'vsi_podatki.json')
 with open("vsi_podatki.json", "r") as dat:
     data = json.load(dat)
 

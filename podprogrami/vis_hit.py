@@ -1,6 +1,8 @@
 import json
 import matplotlib.pyplot as plt
+import os
 
+pot = os.path.join('Podatki', 'podatki_svet.json')
 with open("podatki_svet.json", "r") as dat:
     data = json.load(dat)
 
