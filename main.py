@@ -28,8 +28,8 @@ def naj_leti(kam_letis, tabela_letaisc = "LJU", n = 1):
     if inp == "ja":
         izbiralec.vpis_preference()
         izbiralec.vpis_sprejemljive_ure_cakanja()
-    datum1 = vnesi_datum("vpisite datum (yyyy-mm-dd): ")
-    datum2 = vnesi_datum("vpisite datum (yyyy-mm-dd), ce hocete enosmeren let pustite prazno: ")
+    datum1 = vnesi_datum("vpisite datum odhoda (yyyy-mm-dd): ")
+    datum2 = vnesi_datum("vpisite datum vrnitve (yyyy-mm-dd), ce hocete enosmeren let pustite prazno: ")
     
     naj_leti, link = izbiralec.najbolsi_let(tabela_letaisc, kam_letis, datum1, datum2, n)
     return naj_leti, link
@@ -127,7 +127,7 @@ while True:
         Zapisi_naj_lete_v_dat(najbolsi_leti, link)
 
     if izbira == "5": #iskalnik letov iz bliznih letalisc
-        kam = input("prosim vnesite ime letalisca kamor potujete:")
+        kam = input("prosim vnesite ime letalisca kamor potujete (IATA letalisca):")
         letalisca_blizu = "LJU,ZAG,TRS,TSF,RJK" #tukaj sem raje sam podal najbolj smiselna letalisca, kot da more uporabnik iskati kratice vseh letalisc
         najbolsi_leti, link = naj_leti(kam, letalisca_blizu, 5)
 
