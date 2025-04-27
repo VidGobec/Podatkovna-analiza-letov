@@ -7,7 +7,7 @@ import os
 def graf_inenzitete_letov_na_letalsko_druzbo(podatki):
     """funkcija prejme podatke letov in nariše graf intenzitete letov vsake letalske druzbe, kjer ima vsaka letalska druzba svojo barvo"""
     data = poizvedbe(podatki)
-    data_letalisca = get_podatki.get_vsi_podatki()
+    data_letalisca = get_podatki.get_vsa_letalisca()
 
     import geopandas
     import geodatasets
@@ -55,5 +55,5 @@ def graf_inenzitete_letov_na_letalsko_druzbo(podatki):
         if intenz > 0.1:
             ax.plot(xi,yi, color = (r,g,b,intenz))
             
-
+    ax.set_title("Graf letov letalskih družb")
     plt.show()

@@ -74,5 +74,5 @@ def graf_prometa_in_zamud(podatki):
     ax.scatter(tab_x, tab_y, s=tab_povpzamuda, c="red", alpha = 0.3,edgecolors=None, vmin=0, vmax=100)
     ax.scatter(tab_x, tab_y, s=15, c="blue", vmin=0, vmax=100)
 
-
+    ax.set_title("Graf povprečnih zamud in intenzitet letov med letališči")
     plt.show()

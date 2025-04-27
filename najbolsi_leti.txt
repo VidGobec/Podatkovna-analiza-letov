@@ -1,40 +1,51 @@
+link do booking letov: https://www.google.com/travel/flights?hl=sl&gl=us&curr=EUR&tfs=CBwQAhoeEgoyMDI1LTA4LTAzagcIARIDTEpVcgcIARIDU0lOGh4SCjIwMjUtMDgtMTBqBwgBEgNTSU5yBwgBEgNMSlVCAQFIAXABmAEB&tfu=EgIIAQ
 1
-letalska druzba: Qatar Airways
-cena: 899 EUR
-cas potovanja: 1085 min
-karbonske emisije: 866000 kg CO2
-Letališče Zagreb-> QR 218 ->Mednarodno letališče Hamad
-Mednarodno letališče Hamad-> QR 948 ->Letališče Singapur Changi
+letalska druzba: LOT
+cena: 994 EUR
+cas potovanja: 1385 min
+karbonske emisije: 794000 kg CO2
+Podana je pot do destinacije v obliki: letalisce -> letalska druzba -> letalisce 
+Letališče Jožeta Pučnika Ljubljana-> LO 616 ->Letališče Chopin Varšava
+Letališče Chopin Varšava-> AY 1146 ->Letališče Helsinki-Vantaa
+Letališče Helsinki-Vantaa-> AY 131 ->Letališče Singapur Changi
 
 2
-letalska druzba: Qatar Airways
-cena: 899 EUR
-cas potovanja: 1085 min
-karbonske emisije: 866000 kg CO2
-Letališče Zagreb-> QR 218 ->Mednarodno letališče Hamad
-Mednarodno letališče Hamad-> QR 948 ->Letališče Singapur Changi
+letalska druzba: LOT
+cena: 994 EUR
+cas potovanja: 1385 min
+karbonske emisije: 794000 kg CO2
+Podana je pot do destinacije v obliki: letalisce -> letalska druzba -> letalisce 
+Letališče Jožeta Pučnika Ljubljana-> LO 616 ->Letališče Chopin Varšava
+Letališče Chopin Varšava-> AY 1146 ->Letališče Helsinki-Vantaa
+Letališče Helsinki-Vantaa-> AY 131 ->Letališče Singapur Changi
 
 3
-letalska druzba: Qatar Airways
-cena: 899 EUR
-cas potovanja: 1085 min
-karbonske emisije: 866000 kg CO2
-Letališče Zagreb-> QR 218 ->Mednarodno letališče Hamad
-Mednarodno letališče Hamad-> QR 948 ->Letališče Singapur Changi
+letalska druzba: LOT
+cena: 994 EUR
+cas potovanja: 1385 min
+karbonske emisije: 794000 kg CO2
+Podana je pot do destinacije v obliki: letalisce -> letalska druzba -> letalisce 
+Letališče Jožeta Pučnika Ljubljana-> LO 616 ->Letališče Chopin Varšava
+Letališče Chopin Varšava-> AY 1146 ->Letališče Helsinki-Vantaa
+Letališče Helsinki-Vantaa-> AY 131 ->Letališče Singapur Changi
 
 4
-letalska druzba: Qatar Airways
-cena: 899 EUR
-cas potovanja: 1085 min
-karbonske emisije: 866000 kg CO2
-Letališče Zagreb-> QR 218 ->Mednarodno letališče Hamad
-Mednarodno letališče Hamad-> QR 948 ->Letališče Singapur Changi
+letalska druzba: LOT
+cena: 994 EUR
+cas potovanja: 1385 min
+karbonske emisije: 794000 kg CO2
+Podana je pot do destinacije v obliki: letalisce -> letalska druzba -> letalisce 
+Letališče Jožeta Pučnika Ljubljana-> LO 616 ->Letališče Chopin Varšava
+Letališče Chopin Varšava-> AY 1146 ->Letališče Helsinki-Vantaa
+Letališče Helsinki-Vantaa-> AY 131 ->Letališče Singapur Changi
 
 5
-letalska druzba: Qatar Airways
-cena: 899 EUR
-cas potovanja: 1085 min
-karbonske emisije: 866000 kg CO2
-Letališče Zagreb-> QR 218 ->Mednarodno letališče Hamad
-Mednarodno letališče Hamad-> QR 948 ->Letališče Singapur Changi
+letalska druzba: LOT
+cena: 994 EUR
+cas potovanja: 1385 min
+karbonske emisije: 794000 kg CO2
+Podana je pot do destinacije v obliki: letalisce -> letalska druzba -> letalisce 
+Letališče Jožeta Pučnika Ljubljana-> LO 616 ->Letališče Chopin Varšava
+Letališče Chopin Varšava-> AY 1146 ->Letališče Helsinki-Vantaa
+Letališče Helsinki-Vantaa-> AY 131 ->Letališče Singapur Changi
 

@@ -31,15 +31,16 @@ def naj_leti(kam_letis, tabela_letaisc = "LJU", n = 1):
     datum1 = vnesi_datum("vpisite datum (yyyy-mm-dd): ")
     datum2 = vnesi_datum("vpisite datum (yyyy-mm-dd), ce hocete enosmeren let pustite prazno: ")
     
-    naj_leti = izbiralec.najbolsi_let(tabela_letaisc, kam_letis, datum1, datum2, n)
-    return naj_leti
+    naj_leti, link = izbiralec.najbolsi_let(tabela_letaisc, kam_letis, datum1, datum2, n)
+    return naj_leti, link
 
-def Zapisi_naj_lete_v_dat(najbolsi_leti):
+def Zapisi_naj_lete_v_dat(najbolsi_leti, link):
     """funkcija zapiše nekatere podatke iz letov v datoteko najbolsi_leti.txt,
     podatke, ki jih shrani so, cena, cas potovanja, karbonske_emisije, hyperpovezavo do booking leta
     """
     with open("najbolsi_leti.txt", "w", encoding="utf-8") as dat:
         i = 0
+        dat.write(f"link do booking letov: {link}\n")
         for let in najbolsi_leti:
             i += 1
             dat.write(f"{i}\n")
@@ -58,7 +59,10 @@ def izbira_grafa(podatki):
     while True:
         print("\n\n- Iz seznama izbereš številko, tistega, kar želiš, da se izvede.")
         print("\nSedaj pa izberi iz seznama!")
-        print("\n0 - zaključitev programa\n1 - graf povprečne zamude na letališče\n2 - graf prometa med letališči in poprečne zamude na letališče\n3 - graf intenzitet letov na letalsko družbo\n4 - najbolj uporabljeno letalo\n5 - tortni diagram uporabljenih letal\n")
+        print("\n0 - nazaj\n1 - graf povprečne zamude na letališče\n2 - graf prometa med letališči in poprečne zamude na letališče\n",
+               "3 - graf intenzitet letov na letalsko družbo\n4 - najbolj uporabljeno letalo\n5 - tortni diagram uporabljenih letal\n",
+               "6 - graf hitrosti letal\n", "7 - graf število letov letalskih družb\n"
+               , sep="")
         izbira = input("Vnesi številko iz seznama: ")
         if izbira == "0":
             break
@@ -72,6 +76,10 @@ def izbira_grafa(podatki):
             grafi.najpodostejse_letalo(podatki)
         if izbira == "5":
             grafi.graf_najpogostejsih_letal_torta(podatki)
+        if izbira == "6":
+            grafi.graf_hitrosti(podatki)
+        if izbira == "7":
+            grafi.graf_st_letov_na_letalsko_druzbo(podatki)
         
 
 
@@ -113,13 +121,15 @@ while True:
 
     if izbira == "4": #iskalnik letov
         kam = input("prosim vnesite ime letalisca kamor potujete:")
-        najbolsi_leti = naj_leti(kam, "LJU", 5)
+        najbolsi_leti, link = naj_leti(kam, "LJU", 5)
 
-        Zapisi_naj_lete_v_dat(najbolsi_leti)
+        izbiralec.izpisi_podatke_o_letih(najbolsi_leti)
+        Zapisi_naj_lete_v_dat(najbolsi_leti, link)
 
     if izbira == "5": #iskalnik letov iz bliznih letalisc
         kam = input("prosim vnesite ime letalisca kamor potujete:")
         letalisca_blizu = "LJU,ZAG,TRS,TSF,RJK" #tukaj sem raje sam podal najbolj smiselna letalisca, kot da more uporabnik iskati kratice vseh letalisc
-        najbolsi_leti = naj_leti(kam, letalisca_blizu, 5)
+        najbolsi_leti, link = naj_leti(kam, letalisca_blizu, 5)
 
-        Zapisi_naj_lete_v_dat(najbolsi_leti)
+        izbiralec.izpisi_podatke_o_letih(najbolsi_leti)
+        Zapisi_naj_lete_v_dat(najbolsi_leti, link)

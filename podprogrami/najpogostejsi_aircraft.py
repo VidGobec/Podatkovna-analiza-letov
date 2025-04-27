@@ -70,12 +70,9 @@ def graf_najpogostejsih_letal_torta(data, najmansa_meja = 5):
 
     colors = ['#ff9999','#66b3ff','#99ff99','#ffcc99']  # Distinct colors for each category
 
-    # Create a pie chart
     plt.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140)
 
-    # Title
-    plt.title('Category Distribution')
+    plt.title('Najpogostejše uporabljena letala')
 
-    # Show the chart
-    plt.axis('equal')  # Equal aspect ratio ensures the pie chart is circular
+    plt.axis('equal')  
     plt.show()

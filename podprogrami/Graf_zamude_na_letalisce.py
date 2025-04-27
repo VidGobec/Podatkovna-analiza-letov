@@ -45,5 +45,5 @@ def graf_zamude_letalisc(podatki):
     ax.scatter(tab_x, tab_y, s=tab_povpzamuda, c="red", alpha = 0.3,edgecolors=None)
     ax.scatter(tab_x, tab_y, s=15, c="blue")
 
-
+    ax.set_title("Graf povprečnih zamud letališč")
     plt.show()

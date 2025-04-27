@@ -92,8 +92,9 @@ class IzbiralecLetov:
 
     @staticmethod
     def pridobi_lete(iz_kje, kam, datum_tja, datum_nazaj = ""):
-        """Funkcija, ki sprejme letalisce iz katerega gremo, letalisce v katerega hocemo prispeti, cas odhoda ko gremo tja in cas odhoda
+        """Metoda, ki sprejme letalisce iz katerega gremo, letalisce v katerega hocemo prispeti, cas odhoda ko gremo tja in cas odhoda
         ko gremo nazaj. Iz_kje (letalisce iz katerega gremo) je lahko tudi niz vecih letalisc locenih z vejico.
+        metode podatke letov in link do google strani 
         """
         key = "30aaff7063797c81850350cf7d1f86969cc9952fd844c9d917d5b0f4eef0907f"
  
@@ -129,13 +130,13 @@ class IzbiralecLetov:
                 continue  # ignoriramo nepopoln let
         
         #print("vsileti\n",vsi_leti)
-        return vsi_leti
+        return vsi_leti, results["search_metadata"]["google_flights_url"]
 
 
     def najbolsi_let(self, iz, kam, datum_tja, datum_nazaj = 0, n = 1):
-        """vrne n najbolsih letov v urejenem seznamu (urejen po oceni nasih preferenc)"""
+        """vrne n najbolsih letov v urejenem seznamu (urejen po oceni nasih preferenc), in link do google flights"""
         try:
-            tabela_letov = IzbiralecLetov.pridobi_lete(iz, kam, datum_tja, datum_nazaj)
+            tabela_letov, link = IzbiralecLetov.pridobi_lete(iz, kam, datum_tja, datum_nazaj)
         except: #zalomi se ce ne najde letov zato vrnemo prazen seznam
             return []
 
@@ -168,7 +169,7 @@ class IzbiralecLetov:
                     break
                 i += 1
 
-        return naj_leti
+        return naj_leti, link
         
 
     def _oceni_ceno(self, ocene, st_vseh_opcij):
